@@ -6,6 +6,7 @@ target 'firekit' do
   use_frameworks!
 
   # Pods for firekit
+  pod 'IQKeyboardManagerSwift'
 
   target 'firekitTests' do
     inherit! :search_paths

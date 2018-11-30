@@ -32,7 +32,7 @@
 		39400F114F1ECCB3ED38A973 /* Pods_firekitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firekitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C52F7B3F23BDB0900D000B9 /* Pods-firekit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekit.release.xcconfig"; path = "Pods/Target Support Files/Pods-firekit/Pods-firekit.release.xcconfig"; sourceTree = "<group>"; };
 		7284ACE721B1E24900F1C11C /* firekit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firekit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7284ACEA21B1E24900F1C11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7284ACEA21B1E24900F1C11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		7284ACEC21B1E24900F1C11C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7284ACEF21B1E24900F1C11C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7284ACF121B1E24A00F1C11C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
