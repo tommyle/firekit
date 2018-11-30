@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="SojuKit" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwS-4U-M8c">
+                    <rect key="frame" x="30" y="511" width="315" height="56"/>
+                    <color key="backgroundColor" name="MajorelleBlue"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="3hn-YR-MHP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="LOGIN">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="28"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYj-Dh-DFp">
+                    <rect key="frame" x="30" y="432" width="315" height="56"/>
+                    <color key="backgroundColor" name="Bunting"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="KMX-VN-Q1V"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="28"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="deT-vu-vLn">
+                    <rect key="frame" x="30" y="353" width="315" height="56"/>
+                    <color key="backgroundColor" name="Bunting"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="v65-US-PYs"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" textContentType="email"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="28"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" name="DeepCove"/>
+            <constraints>
+                <constraint firstItem="bYj-Dh-DFp" firstAttribute="top" secondItem="deT-vu-vLn" secondAttribute="bottom" constant="23" id="9mZ-1k-tZf"/>
+                <constraint firstItem="nwS-4U-M8c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Hzv-49-he9"/>
+                <constraint firstItem="deT-vu-vLn" firstAttribute="width" secondItem="nwS-4U-M8c" secondAttribute="width" id="QSp-Oc-Zo2"/>
+                <constraint firstItem="nwS-4U-M8c" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Xu4-H7-fB2"/>
+                <constraint firstItem="deT-vu-vLn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZGF-Xs-cmE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nwS-4U-M8c" secondAttribute="trailing" constant="30" id="cLv-aM-1cP"/>
+                <constraint firstItem="bYj-Dh-DFp" firstAttribute="width" secondItem="nwS-4U-M8c" secondAttribute="width" id="mEv-Ap-I8W"/>
+                <constraint firstItem="nwS-4U-M8c" firstAttribute="top" secondItem="bYj-Dh-DFp" secondAttribute="bottom" constant="23" id="oyY-2s-ZFX"/>
+                <constraint firstItem="bYj-Dh-DFp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ufW-jF-ao5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nwS-4U-M8c" secondAttribute="bottom" constant="100" id="yw2-cN-had"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="130.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Bunting">
+            <color red="0.062745098039215685" green="0.10196078431372549" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DeepCove">
+            <color red="0.027450980392156862" green="0.070588235294117646" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MajorelleBlue">
+            <color red="0.41176470588235292" green="0.21176470588235294" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
