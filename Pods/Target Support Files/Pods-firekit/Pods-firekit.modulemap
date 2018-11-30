@@ -1,0 +1,6 @@
+framework module Pods_firekit {
+  umbrella header "Pods-firekit-umbrella.h"
+
+  export *
+  module * { export * }
+}
