@@ -14,6 +14,7 @@
 		7284ACF221B1E24A00F1C11C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7284ACF121B1E24A00F1C11C /* Assets.xcassets */; };
 		7284ACF521B1E24A00F1C11C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7284ACF321B1E24A00F1C11C /* LaunchScreen.storyboard */; };
 		7284AD0021B1E24A00F1C11C /* firekitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284ACFF21B1E24A00F1C11C /* firekitTests.swift */; };
+		7284AD0B21B1EE3F00F1C11C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7284AD0A21B1EE3F00F1C11C /* Colors.xcassets */; };
 		7755B46584CFC6B4354712A9 /* Pods_firekitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39400F114F1ECCB3ED38A973 /* Pods_firekitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		7284ACFB21B1E24A00F1C11C /* firekitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firekitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7284ACFF21B1E24A00F1C11C /* firekitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firekitTests.swift; sourceTree = "<group>"; };
 		7284AD0121B1E24A00F1C11C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7284AD0A21B1EE3F00F1C11C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		B840459F6C2BA890E3625FAC /* Pods-firekitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firekitTests/Pods-firekitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF89B085B0251F7EB9B6E3EA /* Pods_firekit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firekit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F951D6E7A3B05035A069E89A /* Pods-firekitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-firekitTests/Pods-firekitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				7284ACEC21B1E24900F1C11C /* ViewController.swift */,
 				7284ACEE21B1E24900F1C11C /* Main.storyboard */,
 				7284ACF121B1E24A00F1C11C /* Assets.xcassets */,
+				7284AD0A21B1EE3F00F1C11C /* Colors.xcassets */,
 				7284ACF321B1E24A00F1C11C /* LaunchScreen.storyboard */,
 				7284ACF621B1E24A00F1C11C /* Info.plist */,
 			);
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7284ACF521B1E24A00F1C11C /* LaunchScreen.storyboard in Resources */,
+				7284AD0B21B1EE3F00F1C11C /* Colors.xcassets in Resources */,
 				7284ACF221B1E24A00F1C11C /* Assets.xcassets in Resources */,
 				7284ACF021B1E24900F1C11C /* Main.storyboard in Resources */,
 			);
