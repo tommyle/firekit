@@ -1,5 +1,5 @@
 //
-//  ViewController+Helpers.swift
+//  ViewControllerHelper.swift
 //  firekit
 //
 //  Created by Tommy Le on 2018-12-01.

@@ -39,11 +39,18 @@ class ChatListViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return DataAccessManager.shared.users.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ChartListTableViewCell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ChartListTableViewCell") as! ChartListTableViewCell
+        
+        guard let user = DataAccessManager.shared.users[indexPath.row] else {
+            return cell
+        }
+        
+        cell.profileImage.image = user.profileImage
+        cell.nameLabel.text = "\(user.firstName!) \(user.lastName!)"
 
         return cell
     }

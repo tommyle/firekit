@@ -66,6 +66,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageLabel" destination="cAN-2t-G5q" id="ZCR-EW-iwY"/>
+                <outlet property="messageTimeLabel" destination="baH-WH-FVo" id="Fs3-Rm-YH7"/>
+                <outlet property="nameLabel" destination="L4H-tV-EUF" id="2cz-uZ-P2l"/>
+                <outlet property="profileImage" destination="f9f-QU-l7O" id="d7v-3i-yfV"/>
+            </connections>
             <point key="canvasLocation" x="132.80000000000001" y="157.87106446776613"/>
         </tableViewCell>
     </objects>
