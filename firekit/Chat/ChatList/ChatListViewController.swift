@@ -15,10 +15,23 @@ class ChatListViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.addDismissKeyboardGesture()
+        
         self.chatListTableView.register(UINib(nibName: "ChartListTableViewCell", bundle: nil), forCellReuseIdentifier: "ChartListTableViewCell")
+        
+        self.chatListTableView.tableHeaderView = self.initSearchBar()
         
         // Hides empty cells
         self.chatListTableView.tableFooterView = UIView()
+    }
+    
+    func initSearchBar() -> UISearchBar {
+        let searchBar = UISearchBar.init(frame: CGRect(x: 0, y: 0, width: 375, height: 56))
+        searchBar.searchBarStyle = .minimal
+        searchBar.backgroundColor = UIColor.white
+        searchBar.placeholder = "Search"
+        
+        return searchBar;
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
