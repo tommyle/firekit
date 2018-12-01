@@ -10,10 +10,11 @@ import UIKit
 
 protocol ComposerViewDelegate: class {
     func sendButtonPressed(_ sender: String)
+    func didBeginEditing(_ sender: UITextField)
 }
 
 @IBDesignable
-class ComposerView: UIView {
+class ComposerView: UIView, UITextFieldDelegate {
     
     weak var delegate: ComposerViewDelegate?
 
@@ -41,6 +42,7 @@ class ComposerView: UIView {
         
         textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 14, height: 20))
         textField.leftViewMode = .always
+        textField.delegate = self
         
         return view
     }
@@ -58,10 +60,20 @@ class ComposerView: UIView {
         
         self.sendButtonPressed(message)
     }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.didBeginEditing(textField)
+    }
 }
 
 extension ComposerView: ComposerViewDelegate {
+    
     func sendButtonPressed(_ sender: String) {
         delegate?.sendButtonPressed(sender)
     }
+    
+    func didBeginEditing(_ sender: UITextField) {
+        delegate?.didBeginEditing(sender)
+    }
+    
 }

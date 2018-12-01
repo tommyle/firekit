@@ -13,6 +13,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var chatTableView: UITableView!
     @IBOutlet weak var composerView: ComposerView!
+    var viewHasBeenSet = false
     
     var messages = ["Hello this is B",
                     "Hi B how are you?",
@@ -42,18 +43,25 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.chatTableView.register(UINib(nibName: "MessagesSentTableViewCell", bundle: nil), forCellReuseIdentifier: "MessagesSentTableViewCell")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if (!self.viewHasBeenSet) {
+            self.viewHasBeenSet = true
+            self.scrollToBottom(self.chatTableView, self.messages)
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return messages.count
+        return self.messages.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MessagesSentTableViewCell") as! MessagesSentTableViewCell
         
-        cell.messageLabel.text = messages[indexPath.row]
+        cell.messageLabel.text = self.messages[indexPath.row]
         
         return cell
     }
@@ -67,13 +75,18 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 }
 
 extension ChatViewController: ComposerViewDelegate {
+    
     func sendButtonPressed(_ sender: String) {
         self.messages.append(sender)
         
-        chatTableView.beginUpdates()
-        chatTableView.insertRows(at: [IndexPath(row: self.messages.count - 1, section: 0)], with: .automatic)
-        chatTableView.endUpdates()
+        self.chatTableView.beginUpdates()
+        self.chatTableView.insertRows(at: [IndexPath(row: self.messages.count - 1, section: 0)], with: .automatic)
+        self.chatTableView.endUpdates()
         
+        self.scrollToBottom(self.chatTableView, self.messages)
+    }
+    
+    func didBeginEditing(_ sender: UITextField) {
         self.scrollToBottom(self.chatTableView, self.messages)
     }
 }
