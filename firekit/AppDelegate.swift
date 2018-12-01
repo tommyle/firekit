@@ -15,10 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        self.window?.rootViewController = LoginViewController()
-        
         UIApplication.shared.applicationSupportsShakeToEdit = false
+        
+        let navigation = UINavigationController.init(rootViewController: ChatListViewController())
+        self.window?.rootViewController = navigation
         
         return true
     }

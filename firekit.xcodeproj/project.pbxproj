@@ -26,6 +26,10 @@
 		72968AEE21B25E75003E06DD /* MessagesReceivedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72968AEC21B25E75003E06DD /* MessagesReceivedTableViewCell.swift */; };
 		72968AEF21B25E75003E06DD /* MessagesReceivedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72968AED21B25E75003E06DD /* MessagesReceivedTableViewCell.xib */; };
 		72968AF221B2F09A003E06DD /* ViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72968AF121B2F09A003E06DD /* ViewControllerHelper.swift */; };
+		72968AF721B32CFF003E06DD /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72968AF521B32CFF003E06DD /* ChatListViewController.swift */; };
+		72968AF821B32CFF003E06DD /* ChatListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72968AF621B32CFF003E06DD /* ChatListViewController.xib */; };
+		72968AFD21B32D5B003E06DD /* ChartListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72968AFB21B32D5B003E06DD /* ChartListTableViewCell.swift */; };
+		72968AFE21B32D5B003E06DD /* ChartListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72968AFC21B32D5B003E06DD /* ChartListTableViewCell.xib */; };
 		7755B46584CFC6B4354712A9 /* Pods_firekitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39400F114F1ECCB3ED38A973 /* Pods_firekitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +69,10 @@
 		72968AEC21B25E75003E06DD /* MessagesReceivedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesReceivedTableViewCell.swift; sourceTree = "<group>"; };
 		72968AED21B25E75003E06DD /* MessagesReceivedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessagesReceivedTableViewCell.xib; sourceTree = "<group>"; };
 		72968AF121B2F09A003E06DD /* ViewControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHelper.swift; sourceTree = "<group>"; };
+		72968AF521B32CFF003E06DD /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		72968AF621B32CFF003E06DD /* ChatListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatListViewController.xib; sourceTree = "<group>"; };
+		72968AFB21B32D5B003E06DD /* ChartListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartListTableViewCell.swift; sourceTree = "<group>"; };
+		72968AFC21B32D5B003E06DD /* ChartListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartListTableViewCell.xib; sourceTree = "<group>"; };
 		B840459F6C2BA890E3625FAC /* Pods-firekitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firekitTests/Pods-firekitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF89B085B0251F7EB9B6E3EA /* Pods_firekit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firekit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F951D6E7A3B05035A069E89A /* Pods-firekitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-firekitTests/Pods-firekitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,14 +167,8 @@
 		7284AD1A21B24C4B00F1C11C /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				7284AD1B21B24C9400F1C11C /* ChatViewController.swift */,
-				7284AD1C21B24C9400F1C11C /* ChatViewController.xib */,
-				7284AD1F21B24CE600F1C11C /* ComposerView.swift */,
-				7284AD2121B24CF500F1C11C /* ComposerView.xib */,
-				72968AE821B25E5D003E06DD /* MessagesSentTableViewCell.swift */,
-				72968AE921B25E5D003E06DD /* MessagesSentTableViewCell.xib */,
-				72968AEC21B25E75003E06DD /* MessagesReceivedTableViewCell.swift */,
-				72968AED21B25E75003E06DD /* MessagesReceivedTableViewCell.xib */,
+				72968AF421B32CE1003E06DD /* ChatList */,
+				72968AF321B32CD3003E06DD /* Messenger */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -177,6 +179,32 @@
 				72968AF121B2F09A003E06DD /* ViewControllerHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		72968AF321B32CD3003E06DD /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				7284AD1B21B24C9400F1C11C /* ChatViewController.swift */,
+				7284AD1C21B24C9400F1C11C /* ChatViewController.xib */,
+				7284AD1F21B24CE600F1C11C /* ComposerView.swift */,
+				7284AD2121B24CF500F1C11C /* ComposerView.xib */,
+				72968AE821B25E5D003E06DD /* MessagesSentTableViewCell.swift */,
+				72968AE921B25E5D003E06DD /* MessagesSentTableViewCell.xib */,
+				72968AEC21B25E75003E06DD /* MessagesReceivedTableViewCell.swift */,
+				72968AED21B25E75003E06DD /* MessagesReceivedTableViewCell.xib */,
+			);
+			path = Messenger;
+			sourceTree = "<group>";
+		};
+		72968AF421B32CE1003E06DD /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				72968AF521B32CFF003E06DD /* ChatListViewController.swift */,
+				72968AF621B32CFF003E06DD /* ChatListViewController.xib */,
+				72968AFB21B32D5B003E06DD /* ChartListTableViewCell.swift */,
+				72968AFC21B32D5B003E06DD /* ChartListTableViewCell.xib */,
+			);
+			path = ChatList;
 			sourceTree = "<group>";
 		};
 		D9690EC4A95C179F67819DC2 /* Frameworks */ = {
@@ -279,12 +307,14 @@
 			files = (
 				7284AD1821B1EE9D00F1C11C /* LoginViewController.xib in Resources */,
 				7284ACF521B1E24A00F1C11C /* LaunchScreen.storyboard in Resources */,
+				72968AFE21B32D5B003E06DD /* ChartListTableViewCell.xib in Resources */,
 				72968AEF21B25E75003E06DD /* MessagesReceivedTableViewCell.xib in Resources */,
 				7284AD1E21B24C9400F1C11C /* ChatViewController.xib in Resources */,
 				72968AEB21B25E5D003E06DD /* MessagesSentTableViewCell.xib in Resources */,
 				7284AD2221B24CF500F1C11C /* ComposerView.xib in Resources */,
 				7284AD0B21B1EE3F00F1C11C /* Colors.xcassets in Resources */,
 				7284ACF221B1E24A00F1C11C /* Assets.xcassets in Resources */,
+				72968AF821B32CFF003E06DD /* ChatListViewController.xib in Resources */,
 				7284ACF021B1E24900F1C11C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,8 +430,10 @@
 				7284AD2021B24CE600F1C11C /* ComposerView.swift in Sources */,
 				7284AD1921B1EE9D00F1C11C /* LoginViewController.swift in Sources */,
 				7284ACED21B1E24900F1C11C /* ViewController.swift in Sources */,
+				72968AFD21B32D5B003E06DD /* ChartListTableViewCell.swift in Sources */,
 				72968AF221B2F09A003E06DD /* ViewControllerHelper.swift in Sources */,
 				72968AEA21B25E5D003E06DD /* MessagesSentTableViewCell.swift in Sources */,
+				72968AF721B32CFF003E06DD /* ChatListViewController.swift in Sources */,
 				7284AD1D21B24C9400F1C11C /* ChatViewController.swift in Sources */,
 				7284ACEB21B1E24900F1C11C /* AppDelegate.swift in Sources */,
 			);
