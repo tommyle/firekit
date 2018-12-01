@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/tommyle/firekit/master/banner.png"/>
+
 # FireKit
 
 FireKit is a Swift framework that contains a set of commonly used UI components and screens. You can use this framework to kickstart your next project!
