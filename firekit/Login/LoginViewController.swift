@@ -20,6 +20,11 @@ class LoginViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        let chatViewController = ChatViewController()
+        self.present(chatViewController, animated: true, completion: nil)
+    }
 }
 
 extension UITextField{
