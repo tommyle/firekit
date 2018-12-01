@@ -14,6 +14,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="firekit" customModuleProvider="target">
             <connections>
                 <outlet property="emailTextField" destination="deT-vu-vLn" id="ctP-sL-wsm"/>
+                <outlet property="loginButton" destination="nwS-4U-M8c" id="dfb-5e-zyp"/>
                 <outlet property="passwordTextField" destination="bYj-Dh-DFp" id="WXB-c0-nEO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,6 +24,12 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundLoginV1DarkTheme" translatesAutoresizingMaskIntoConstraints="NO" id="N5U-GJ-uNC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="N5U-GJ-uNC" secondAttribute="height" multiplier="375:280" id="XDJ-bT-nFU"/>
+                    </constraints>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwS-4U-M8c">
                     <rect key="frame" x="30" y="644" width="315" height="56"/>
                     <color key="backgroundColor" name="MajorelleBlue"/>
@@ -78,12 +85,6 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </textField>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundLoginV1DarkTheme" translatesAutoresizingMaskIntoConstraints="NO" id="N5U-GJ-uNC">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="N5U-GJ-uNC" secondAttribute="height" multiplier="375:280" id="XDJ-bT-nFU"/>
-                    </constraints>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r61-d5-dpI">
                     <rect key="frame" x="112.66666666666669" y="728" width="150" height="30"/>
                     <constraints>

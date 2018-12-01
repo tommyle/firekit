@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IHKeyboardAvoiding
 
 class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -32,7 +33,11 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.addDismissKeyboardGesture()
+        
         self.composerView.delegate = self
+        
+        KeyboardAvoiding.avoidingView = self.composerView
         
         self.chatTableView.register(UINib(nibName: "MessagesSentTableViewCell", bundle: nil), forCellReuseIdentifier: "MessagesSentTableViewCell")
     }
