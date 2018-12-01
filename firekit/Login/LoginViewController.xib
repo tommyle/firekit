@@ -11,8 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="SojuKit" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="firekit" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="deT-vu-vLn" id="ctP-sL-wsm"/>
+                <outlet property="passwordTextField" destination="bYj-Dh-DFp" id="WXB-c0-nEO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwS-4U-M8c">
-                    <rect key="frame" x="30" y="511" width="315" height="56"/>
+                    <rect key="frame" x="30" y="533" width="315" height="56"/>
                     <color key="backgroundColor" name="MajorelleBlue"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="3hn-YR-MHP"/>
@@ -37,55 +39,139 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </button>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYj-Dh-DFp">
-                    <rect key="frame" x="30" y="432" width="315" height="56"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYj-Dh-DFp">
+                    <rect key="frame" x="30" y="453" width="315" height="56"/>
                     <color key="backgroundColor" name="Bunting"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="KMX-VN-Q1V"/>
                     </constraints>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <integer key="value" value="28"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                            <color key="value" name="Perano"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="deT-vu-vLn">
-                    <rect key="frame" x="30" y="353" width="315" height="56"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="deT-vu-vLn">
+                    <rect key="frame" x="30" y="373" width="315" height="56"/>
                     <color key="backgroundColor" name="Bunting"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="v65-US-PYs"/>
                     </constraints>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                    <textInputTraits key="textInputTraits" textContentType="email"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <integer key="value" value="28"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                            <color key="value" name="Perano"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundLoginV1DarkTheme" translatesAutoresizingMaskIntoConstraints="NO" id="N5U-GJ-uNC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="N5U-GJ-uNC" secondAttribute="height" multiplier="375:280" id="XDJ-bT-nFU"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r61-d5-dpI">
+                    <rect key="frame" x="112.5" y="617" width="150" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Awe-6X-2xo"/>
+                        <constraint firstAttribute="width" constant="150" id="MA7-Im-4ka"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="Sign Up">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Mjz-c9-Ntz">
+                    <rect key="frame" x="57.5" y="287" width="260" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ei-Y2-dLW">
+                            <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                            <color key="backgroundColor" name="Bunting"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="BXp-6Z-FIf"/>
+                                <constraint firstAttribute="width" constant="56" id="wT3-2v-0lE"/>
+                            </constraints>
+                            <state key="normal" image="twitter"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="28"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wB1-II-sEZ">
+                            <rect key="frame" x="102" y="0.0" width="56" height="56"/>
+                            <color key="backgroundColor" name="Bunting"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="56" id="HYX-pr-eej"/>
+                                <constraint firstAttribute="height" constant="56" id="ret-9o-u1b"/>
+                            </constraints>
+                            <state key="normal" image="google"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="28"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fr8-kF-xLI">
+                            <rect key="frame" x="204" y="0.0" width="56" height="56"/>
+                            <color key="backgroundColor" name="Bunting"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="56" id="d9j-hZ-lTz"/>
+                                <constraint firstAttribute="height" constant="56" id="vUc-8d-D90"/>
+                            </constraints>
+                            <state key="normal" image="facebook"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="28"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="LiL-KF-PA9"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <color key="backgroundColor" name="DeepCove"/>
             <constraints>
-                <constraint firstItem="bYj-Dh-DFp" firstAttribute="top" secondItem="deT-vu-vLn" secondAttribute="bottom" constant="23" id="9mZ-1k-tZf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N5U-GJ-uNC" secondAttribute="trailing" id="1CL-Vz-A9N"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="r61-d5-dpI" secondAttribute="bottom" constant="20" id="6OZ-Y1-vQ2"/>
+                <constraint firstItem="bYj-Dh-DFp" firstAttribute="top" secondItem="deT-vu-vLn" secondAttribute="bottom" constant="24" id="9mZ-1k-tZf"/>
+                <constraint firstItem="N5U-GJ-uNC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FPk-ql-dLh"/>
                 <constraint firstItem="nwS-4U-M8c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Hzv-49-he9"/>
                 <constraint firstItem="deT-vu-vLn" firstAttribute="width" secondItem="nwS-4U-M8c" secondAttribute="width" id="QSp-Oc-Zo2"/>
+                <constraint firstItem="N5U-GJ-uNC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Shs-Ia-aQv"/>
+                <constraint firstItem="r61-d5-dpI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="X0g-kQ-wYo"/>
+                <constraint firstItem="r61-d5-dpI" firstAttribute="top" secondItem="nwS-4U-M8c" secondAttribute="bottom" constant="28" id="Xha-Yh-Ihq"/>
                 <constraint firstItem="nwS-4U-M8c" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Xu4-H7-fB2"/>
                 <constraint firstItem="deT-vu-vLn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZGF-Xs-cmE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nwS-4U-M8c" secondAttribute="trailing" constant="30" id="cLv-aM-1cP"/>
+                <constraint firstItem="deT-vu-vLn" firstAttribute="top" secondItem="Mjz-c9-Ntz" secondAttribute="bottom" constant="30" id="dz9-a0-N9N"/>
+                <constraint firstItem="Mjz-c9-Ntz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jGF-1J-R4I"/>
                 <constraint firstItem="bYj-Dh-DFp" firstAttribute="width" secondItem="nwS-4U-M8c" secondAttribute="width" id="mEv-Ap-I8W"/>
-                <constraint firstItem="nwS-4U-M8c" firstAttribute="top" secondItem="bYj-Dh-DFp" secondAttribute="bottom" constant="23" id="oyY-2s-ZFX"/>
+                <constraint firstItem="nwS-4U-M8c" firstAttribute="top" secondItem="bYj-Dh-DFp" secondAttribute="bottom" constant="24" id="oyY-2s-ZFX"/>
                 <constraint firstItem="bYj-Dh-DFp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ufW-jF-ao5"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nwS-4U-M8c" secondAttribute="bottom" constant="100" id="yw2-cN-had"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="130.40000000000001" y="152.47376311844079"/>
         </view>
     </objects>
     <resources>
+        <image name="backgroundLoginV1DarkTheme" width="375" height="280"/>
+        <image name="facebook" width="56" height="56"/>
+        <image name="google" width="56" height="56"/>
+        <image name="twitter" width="56" height="56"/>
         <namedColor name="Bunting">
             <color red="0.062745098039215685" green="0.10196078431372549" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -94,6 +180,9 @@
         </namedColor>
         <namedColor name="MajorelleBlue">
             <color red="0.41176470588235292" green="0.21176470588235294" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Perano">
+            <color red="0.71372549019607845" green="0.72549019607843135" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
