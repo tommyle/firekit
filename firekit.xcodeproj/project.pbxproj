@@ -132,6 +132,7 @@
 		7284ACE921B1E24900F1C11C /* firekit */ = {
 			isa = PBXGroup;
 			children = (
+				72968B0321B3437B003E06DD /* Data */,
 				72968AF021B2F07D003E06DD /* Helpers */,
 				7284AD1A21B24C4B00F1C11C /* Chat */,
 				7284AD0C21B1EE6400F1C11C /* Login */,
@@ -205,6 +206,13 @@
 				72968AFC21B32D5B003E06DD /* ChartListTableViewCell.xib */,
 			);
 			path = ChatList;
+			sourceTree = "<group>";
+		};
+		72968B0321B3437B003E06DD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		D9690EC4A95C179F67819DC2 /* Frameworks */ = {
