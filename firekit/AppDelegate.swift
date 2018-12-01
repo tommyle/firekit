@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = LoginViewController()
         
+        UIApplication.shared.applicationSupportsShakeToEdit = false
+        
         return true
     }
 
