@@ -8,12 +8,26 @@
 
 import UIKit
 
-extension UIViewController {
+extension UIViewController: UIGestureRecognizerDelegate {
     
+    /*
+     * Aadd a gesture recognizer to the view controller to dismiss the keyboard when the user taps outside of the textfield
+     */
     func addDismissKeyboardGesture() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.delegate = self
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
+    }
+    
+    /*
+     * Ignore taps on buttons
+     */
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        if touch.view is UIButton {
+            return false
+        }
+        return true
     }
     
     @objc func dismissKeyboard() {
