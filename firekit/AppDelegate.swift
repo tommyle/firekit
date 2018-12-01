@@ -17,8 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         UIApplication.shared.applicationSupportsShakeToEdit = false
         
-        let navigation = UINavigationController.init(rootViewController: ChatListViewController())
-        self.window?.rootViewController = navigation
+        let activityFeedViewController = ActivityFeedViewController()
+        activityFeedViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 0)
+        let chatListViewController = ChatListViewController()
+        chatListViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
+        let profileViewController = ProfileViewController()
+        profileViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 2)
+        
+        let tabBarViewController = UITabBarController()
+        tabBarViewController.viewControllers = [UINavigationController.init(rootViewController: activityFeedViewController),
+                                                UINavigationController.init(rootViewController: chatListViewController),
+                                                UINavigationController.init(rootViewController: profileViewController)]
+            
+        window?.rootViewController = tabBarViewController
         
         return true
     }

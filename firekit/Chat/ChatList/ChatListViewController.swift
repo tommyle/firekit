@@ -60,7 +60,10 @@ class ChatListViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(ChatViewController(), animated: true)
+        let chatViewController = ChatViewController()
+        chatViewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(chatViewController, animated: true)
+
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
