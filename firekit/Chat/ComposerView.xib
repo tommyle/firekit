@@ -19,20 +19,20 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxv-B8-WZm">
-                    <rect key="frame" x="337" y="8" width="30" height="30"/>
+                    <rect key="frame" x="331" y="8" width="36" height="36"/>
                     <color key="backgroundColor" name="Carnation"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="30" id="Y0s-p4-Yjf"/>
-                        <constraint firstAttribute="height" constant="30" id="fZK-ey-Usc"/>
+                        <constraint firstAttribute="width" constant="36" id="Y0s-p4-Yjf"/>
+                        <constraint firstAttribute="height" constant="36" id="fZK-ey-Usc"/>
                     </constraints>
                     <state key="normal" image="send"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="15"/>
+                            <integer key="value" value="18"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -40,27 +40,27 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu8-kU-Lfy">
-                    <rect key="frame" x="8" y="8" width="30" height="30"/>
+                    <rect key="frame" x="8" y="8" width="36" height="36"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="30" id="eYt-TF-32L"/>
-                        <constraint firstAttribute="height" constant="30" id="uqH-MO-6hi"/>
+                        <constraint firstAttribute="width" constant="36" id="eYt-TF-32L"/>
+                        <constraint firstAttribute="height" constant="36" id="uqH-MO-6hi"/>
                     </constraints>
                     <state key="normal" image="add">
                         <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cdq-8M-2Sw">
-                    <rect key="frame" x="46" y="8" width="283" height="30"/>
+                    <rect key="frame" x="56" y="8" width="263" height="36"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="KWb-7X-YJH"/>
+                        <constraint firstAttribute="height" constant="36" id="KWb-7X-YJH"/>
                     </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="15"/>
+                            <integer key="value" value="18"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </textField>
@@ -69,12 +69,12 @@
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qxv-B8-WZm" secondAttribute="bottom" constant="8" id="5OX-cR-una"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cdq-8M-2Sw" secondAttribute="bottom" constant="8" id="EoR-06-ML1"/>
-                <constraint firstItem="qxv-B8-WZm" firstAttribute="leading" secondItem="cdq-8M-2Sw" secondAttribute="trailing" constant="8" id="Ngd-dP-E2g"/>
+                <constraint firstItem="qxv-B8-WZm" firstAttribute="leading" secondItem="cdq-8M-2Sw" secondAttribute="trailing" constant="12" id="Ngd-dP-E2g"/>
                 <constraint firstItem="wu8-kU-Lfy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="VJL-ET-PHD"/>
                 <constraint firstItem="wu8-kU-Lfy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="YCM-Tc-b5I"/>
                 <constraint firstItem="qxv-B8-WZm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="jfj-8j-Y1f"/>
                 <constraint firstItem="cdq-8M-2Sw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="ju7-Cc-7In"/>
-                <constraint firstItem="cdq-8M-2Sw" firstAttribute="leading" secondItem="wu8-kU-Lfy" secondAttribute="trailing" constant="8" id="odj-JE-wzF"/>
+                <constraint firstItem="cdq-8M-2Sw" firstAttribute="leading" secondItem="wu8-kU-Lfy" secondAttribute="trailing" constant="12" id="odj-JE-wzF"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qxv-B8-WZm" secondAttribute="trailing" constant="8" id="rCI-5K-ZnI"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wu8-kU-Lfy" secondAttribute="bottom" constant="8" id="wDx-9A-VD2"/>
             </constraints>
