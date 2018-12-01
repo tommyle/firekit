@@ -8,8 +8,14 @@
 
 import UIKit
 
+protocol ComposerViewDelegate: class {
+    func sendButtonPressed(_ sender: String)
+}
+
 @IBDesignable
 class ComposerView: UIView {
+    
+    weak var delegate: ComposerViewDelegate?
 
     @IBOutlet var view: UIView!
     @IBOutlet weak var textField: UITextField!
@@ -37,5 +43,25 @@ class ComposerView: UIView {
         textField.leftViewMode = .always
         
         return view
+    }
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+        guard let message = textField.text else {
+            return
+        }
+        
+        if (message == "") {
+            return
+        }
+        
+        self.textField.text = ""
+        
+        self.sendButtonPressed(message)
+    }
+}
+
+extension ComposerView: ComposerViewDelegate {
+    func sendButtonPressed(_ sender: String) {
+        delegate?.sendButtonPressed(sender)
     }
 }

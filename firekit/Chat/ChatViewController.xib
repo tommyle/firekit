@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController" customModule="firekit" customModuleProvider="target">
             <connections>
+                <outlet property="chatTableView" destination="P7c-V6-4Xk" id="7Hj-KG-AnF"/>
+                <outlet property="composerView" destination="tmS-wM-kd3" id="kpy-ft-Iqv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,15 +26,27 @@
                     <rect key="frame" x="0.0" y="732" width="375" height="80"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P7c-V6-4Xk">
+                    <rect key="frame" x="0.0" y="44" width="375" height="688"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Y9l-r4-n1g"/>
+                        <outlet property="delegate" destination="-1" id="Uay-4b-GrB"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="tmS-wM-kd3" firstAttribute="top" secondItem="P7c-V6-4Xk" secondAttribute="bottom" id="0SO-46-yX5"/>
+                <constraint firstItem="P7c-V6-4Xk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="3Wm-iQ-n5Z"/>
+                <constraint firstItem="P7c-V6-4Xk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Khh-6Z-sIL"/>
                 <constraint firstAttribute="bottom" secondItem="tmS-wM-kd3" secondAttribute="bottom" id="aVN-Pr-fI9"/>
+                <constraint firstAttribute="trailing" secondItem="P7c-V6-4Xk" secondAttribute="trailing" id="lUm-E9-vAt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tmS-wM-kd3" secondAttribute="trailing" id="ox8-yR-dN4"/>
                 <constraint firstItem="tmS-wM-kd3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="r63-pg-XQc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+            <point key="canvasLocation" x="132" y="153.69458128078819"/>
         </view>
     </objects>
 </document>
