@@ -1,6 +1,6 @@
 # FireKit
 
-FireKit is a framework that contains a set of commonly used UI components and screens. You can use this framework to kickstart your next project!
+FireKit is a Swift framework that contains a set of commonly used UI components and screens. You can use this framework to kickstart your next project!
 
 100% native. Give it a try!
 
