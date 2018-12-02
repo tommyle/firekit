@@ -28,7 +28,7 @@ class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITable
         self.storiesCollectionView.delegate = self
         self.storiesCollectionView.dataSource = self
         self.storiesCollectionView.showsHorizontalScrollIndicator = false
-        self.storiesCollectionView.addBorder(toSide: .Bottom, withColor: UIColor.init(named: "Magnesium")!.cgColor, andThickness: 0.5)
+        self.storiesCollectionView.addBorder(toSide: .Bottom, withColor: UIColor.init(named: "Magnesium")!.cgColor, andThickness: 0.4)
         
         self.feedTableView.register(UINib(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostTableViewCell")
         self.feedTableView.tableFooterView = UIView()
