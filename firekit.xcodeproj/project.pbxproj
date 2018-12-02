@@ -45,6 +45,7 @@
 		72968B2921B4471B003E06DD /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72968B2721B4471B003E06DD /* PostCollectionViewCell.xib */; };
 		72EFAB2A21B44C2100BC896B /* ProfileCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFAB2821B44C2100BC896B /* ProfileCollectionReusableView.swift */; };
 		72EFAB2B21B44C2100BC896B /* ProfileCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EFAB2921B44C2100BC896B /* ProfileCollectionReusableView.xib */; };
+		72EFAB2D21B4988C00BC896B /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFAB2C21B4988C00BC896B /* UIColorHelper.swift */; };
 		7755B46584CFC6B4354712A9 /* Pods_firekitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39400F114F1ECCB3ED38A973 /* Pods_firekitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		72968B2721B4471B003E06DD /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		72EFAB2821B44C2100BC896B /* ProfileCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionReusableView.swift; sourceTree = "<group>"; };
 		72EFAB2921B44C2100BC896B /* ProfileCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionReusableView.xib; sourceTree = "<group>"; };
+		72EFAB2C21B4988C00BC896B /* UIColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
 		B840459F6C2BA890E3625FAC /* Pods-firekitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firekitTests/Pods-firekitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF89B085B0251F7EB9B6E3EA /* Pods_firekit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firekit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F951D6E7A3B05035A069E89A /* Pods-firekitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-firekitTests/Pods-firekitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				72968B2421B3A797003E06DD /* UIViewHelper.swift */,
+				72EFAB2C21B4988C00BC896B /* UIColorHelper.swift */,
 				72968AF121B2F09A003E06DD /* ViewControllerHelper.swift */,
 				72968B0621B346D3003E06DD /* DataAccessManager.swift */,
 			);
@@ -524,6 +527,7 @@
 				72EFAB2A21B44C2100BC896B /* ProfileCollectionReusableView.swift in Sources */,
 				72968B1921B35746003E06DD /* PostTableViewCell.swift in Sources */,
 				7284AD2021B24CE600F1C11C /* ComposerView.swift in Sources */,
+				72EFAB2D21B4988C00BC896B /* UIColorHelper.swift in Sources */,
 				7284AD1921B1EE9D00F1C11C /* LoginViewController.swift in Sources */,
 				72968B1221B35157003E06DD /* ActivityFeedViewController.swift in Sources */,
 				72968B2821B4471B003E06DD /* PostCollectionViewCell.swift in Sources */,

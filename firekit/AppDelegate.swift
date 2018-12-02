@@ -18,11 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.applicationSupportsShakeToEdit = false
         
         let activityFeedViewController = ActivityFeedViewController()
-        activityFeedViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 0)
+        let activityTab = UITabBarItem.init(title: "Home", image: UIImage.init(named: "home"), selectedImage: UIImage.init(named: "homeFilled"))
+        activityFeedViewController.tabBarItem = activityTab
+        
         let chatListViewController = ChatListViewController()
-        chatListViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
+        let searchTab = UITabBarItem.init(title: "Search", image: UIImage.init(named: "search"), selectedImage: UIImage.init(named: "searchFilled"))
+        chatListViewController.tabBarItem = searchTab
+        
         let profileViewController = ProfileViewController()
-        profileViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .recents, tag: 2)
+        let profileTab = UITabBarItem.init(title: "Profile", image: UIImage.init(named: "profile"), selectedImage: UIImage.init(named: "profileFilled"))
+        profileViewController.tabBarItem = profileTab
+        
+        UITabBar.appearance().tintColor = UIColor.nero
+        UITabBar.appearance().unselectedItemTintColor = UIColor.nero
         
         let tabBarViewController = UITabBarController()
         tabBarViewController.viewControllers = [UINavigationController.init(rootViewController: activityFeedViewController),
