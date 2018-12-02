@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let chatListViewController = ChatListViewController()
         chatListViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
         let profileViewController = ProfileViewController()
-        profileViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 2)
+        profileViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .recents, tag: 2)
         
         let tabBarViewController = UITabBarController()
         tabBarViewController.viewControllers = [UINavigationController.init(rootViewController: activityFeedViewController),

@@ -41,6 +41,10 @@
 		72968B2221B3A078003E06DD /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72968B2021B3A078003E06DD /* StoriesCollectionViewCell.swift */; };
 		72968B2321B3A078003E06DD /* StoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72968B2121B3A078003E06DD /* StoriesCollectionViewCell.xib */; };
 		72968B2521B3A797003E06DD /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72968B2421B3A797003E06DD /* UIViewHelper.swift */; };
+		72968B2821B4471B003E06DD /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72968B2621B4471B003E06DD /* PostCollectionViewCell.swift */; };
+		72968B2921B4471B003E06DD /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72968B2721B4471B003E06DD /* PostCollectionViewCell.xib */; };
+		72EFAB2A21B44C2100BC896B /* ProfileCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFAB2821B44C2100BC896B /* ProfileCollectionReusableView.swift */; };
+		72EFAB2B21B44C2100BC896B /* ProfileCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EFAB2921B44C2100BC896B /* ProfileCollectionReusableView.xib */; };
 		7755B46584CFC6B4354712A9 /* Pods_firekitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39400F114F1ECCB3ED38A973 /* Pods_firekitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +99,10 @@
 		72968B2021B3A078003E06DD /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		72968B2121B3A078003E06DD /* StoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		72968B2421B3A797003E06DD /* UIViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
+		72968B2621B4471B003E06DD /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		72968B2721B4471B003E06DD /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
+		72EFAB2821B44C2100BC896B /* ProfileCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionReusableView.swift; sourceTree = "<group>"; };
+		72EFAB2921B44C2100BC896B /* ProfileCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionReusableView.xib; sourceTree = "<group>"; };
 		B840459F6C2BA890E3625FAC /* Pods-firekitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firekitTests/Pods-firekitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF89B085B0251F7EB9B6E3EA /* Pods_firekit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firekit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F951D6E7A3B05035A069E89A /* Pods-firekitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-firekitTests/Pods-firekitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -245,6 +253,10 @@
 			children = (
 				72968B0B21B350B1003E06DD /* ProfileViewController.swift */,
 				72968B0C21B350B1003E06DD /* ProfileViewController.xib */,
+				72968B2621B4471B003E06DD /* PostCollectionViewCell.swift */,
+				72968B2721B4471B003E06DD /* PostCollectionViewCell.xib */,
+				72EFAB2821B44C2100BC896B /* ProfileCollectionReusableView.swift */,
+				72EFAB2921B44C2100BC896B /* ProfileCollectionReusableView.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -380,12 +392,14 @@
 			files = (
 				7284AD1821B1EE9D00F1C11C /* LoginViewController.xib in Resources */,
 				7284ACF521B1E24A00F1C11C /* LaunchScreen.storyboard in Resources */,
+				72EFAB2B21B44C2100BC896B /* ProfileCollectionReusableView.xib in Resources */,
 				72968AFE21B32D5B003E06DD /* ChartListTableViewCell.xib in Resources */,
 				72968AEF21B25E75003E06DD /* MessagesReceivedTableViewCell.xib in Resources */,
 				7284AD1E21B24C9400F1C11C /* ChatViewController.xib in Resources */,
 				72968AEB21B25E5D003E06DD /* MessagesSentTableViewCell.xib in Resources */,
 				72968B0E21B350B1003E06DD /* ProfileViewController.xib in Resources */,
 				72968B1621B354BA003E06DD /* Main.storyboard in Resources */,
+				72968B2921B4471B003E06DD /* PostCollectionViewCell.xib in Resources */,
 				7284AD2221B24CF500F1C11C /* ComposerView.xib in Resources */,
 				72968B1321B35157003E06DD /* ActivityFeedViewController.xib in Resources */,
 				7284AD0B21B1EE3F00F1C11C /* Colors.xcassets in Resources */,
@@ -507,10 +521,12 @@
 				72968B0721B346D3003E06DD /* DataAccessManager.swift in Sources */,
 				72968B2221B3A078003E06DD /* StoriesCollectionViewCell.swift in Sources */,
 				72968B2521B3A797003E06DD /* UIViewHelper.swift in Sources */,
+				72EFAB2A21B44C2100BC896B /* ProfileCollectionReusableView.swift in Sources */,
 				72968B1921B35746003E06DD /* PostTableViewCell.swift in Sources */,
 				7284AD2021B24CE600F1C11C /* ComposerView.swift in Sources */,
 				7284AD1921B1EE9D00F1C11C /* LoginViewController.swift in Sources */,
 				72968B1221B35157003E06DD /* ActivityFeedViewController.swift in Sources */,
+				72968B2821B4471B003E06DD /* PostCollectionViewCell.swift in Sources */,
 				72968B0D21B350B1003E06DD /* ProfileViewController.swift in Sources */,
 				72968B0521B346BC003E06DD /* User.swift in Sources */,
 				72968AFD21B32D5B003E06DD /* ChartListTableViewCell.swift in Sources */,

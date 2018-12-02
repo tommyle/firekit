@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="ProfileCollectionReusableView" customModule="firekit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fc0-3q-XjZ">
+                    <rect key="frame" x="2" y="2" width="316" height="276"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sara Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qky-qG-a14">
+                            <rect key="frame" x="12" y="144" width="292" height="20.5"/>
+                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrJ-j6-e3a">
+                            <rect key="frame" x="68" y="176.5" width="180" height="30"/>
+                            <color key="backgroundColor" name="BleuDeFrance"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="QnS-RD-C6K"/>
+                                <constraint firstAttribute="width" constant="180" id="w3S-bw-YOF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                            <state key="normal" title="Follow">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="1K9-eZ-86h">
+                            <rect key="frame" x="34" y="221.5" width="248" height="38.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="N1v-Rf-SZG">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="38.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="87" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlq-ct-yjB">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="20.5"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                            <color key="textColor" name="Nero"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnv-nd-0c3">
+                                            <rect key="frame" x="0.0" y="22.5" width="60" height="16"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <color key="textColor" name="DoveGray"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="X7R-3H-Fc8">
+                                    <rect key="frame" x="94" y="0.0" width="60" height="38.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30.5k" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sV4-ji-Uqf">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="20.5"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                            <color key="textColor" name="Nero"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noF-KJ-c6O">
+                                            <rect key="frame" x="0.0" y="22.5" width="60" height="16"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <color key="textColor" name="DoveGray"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Te4-aL-NA0">
+                                    <rect key="frame" x="188" y="0.0" width="60" height="38.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="190" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bha-uL-EDm">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="20.5"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                            <color key="textColor" name="Nero"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Following" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxJ-tv-4Hk">
+                                            <rect key="frame" x="0.0" y="22.5" width="60" height="16"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <color key="textColor" name="DoveGray"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pox-vn-Rea">
+                            <rect key="frame" x="98" y="12" width="120" height="120"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="XPg-Ua-1zJ">
+                                    <rect key="frame" x="4" y="4" width="112" height="112"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="56"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="pox-vn-Rea" secondAttribute="height" multiplier="1:1" id="DZ9-rj-vs1"/>
+                                <constraint firstItem="XPg-Ua-1zJ" firstAttribute="leading" secondItem="pox-vn-Rea" secondAttribute="leading" constant="4" id="F29-dg-Bbf"/>
+                                <constraint firstItem="XPg-Ua-1zJ" firstAttribute="top" secondItem="pox-vn-Rea" secondAttribute="top" constant="4" id="ZWf-Zz-Qpx"/>
+                                <constraint firstAttribute="trailing" secondItem="XPg-Ua-1zJ" secondAttribute="trailing" constant="4" id="gVo-gp-i82"/>
+                                <constraint firstAttribute="width" constant="120" id="isc-Lb-kDM"/>
+                                <constraint firstAttribute="bottom" secondItem="XPg-Ua-1zJ" secondAttribute="bottom" constant="4" id="ngU-sN-5KZ"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="60"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="1K9-eZ-86h" secondAttribute="bottom" constant="16" id="2Ef-4e-C6p"/>
+                        <constraint firstAttribute="trailing" secondItem="qky-qG-a14" secondAttribute="trailing" constant="12" id="8sW-FL-C9G"/>
+                        <constraint firstItem="CrJ-j6-e3a" firstAttribute="centerX" secondItem="Fc0-3q-XjZ" secondAttribute="centerX" id="KRy-dR-yzU"/>
+                        <constraint firstItem="qky-qG-a14" firstAttribute="top" secondItem="pox-vn-Rea" secondAttribute="bottom" constant="12" id="OEN-6H-dmG"/>
+                        <constraint firstItem="1K9-eZ-86h" firstAttribute="centerX" secondItem="Fc0-3q-XjZ" secondAttribute="centerX" id="Per-cU-Jqz"/>
+                        <constraint firstItem="CrJ-j6-e3a" firstAttribute="top" secondItem="qky-qG-a14" secondAttribute="bottom" constant="12" id="kKv-NB-gIM"/>
+                        <constraint firstItem="pox-vn-Rea" firstAttribute="top" secondItem="Fc0-3q-XjZ" secondAttribute="top" constant="12" id="l94-D7-J17"/>
+                        <constraint firstItem="pox-vn-Rea" firstAttribute="centerX" secondItem="Fc0-3q-XjZ" secondAttribute="centerX" id="lPo-9c-fye"/>
+                        <constraint firstItem="qky-qG-a14" firstAttribute="leading" secondItem="Fc0-3q-XjZ" secondAttribute="leading" constant="12" id="tBW-ga-7pq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Fc0-3q-XjZ" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="2" id="LEm-IB-n7V"/>
+                <constraint firstAttribute="bottom" secondItem="Fc0-3q-XjZ" secondAttribute="bottom" constant="2" id="Xc3-rk-UPN"/>
+                <constraint firstItem="Fc0-3q-XjZ" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="2" id="lbW-qj-41e"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="Fc0-3q-XjZ" secondAttribute="trailing" constant="2" id="sSH-Qz-WJ6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="followButton" destination="CrJ-j6-e3a" id="4Ur-fy-ZWw"/>
+                <outlet property="followersLabel" destination="sV4-ji-Uqf" id="IUT-eY-omz"/>
+                <outlet property="followingLabel" destination="Bha-uL-EDm" id="dKj-hX-qTL"/>
+                <outlet property="nameLabel" destination="qky-qG-a14" id="zb2-vM-Ebo"/>
+                <outlet property="postsLabel" destination="Vlq-ct-yjB" id="7CT-k9-mcp"/>
+                <outlet property="profileImageContainerView" destination="pox-vn-Rea" id="HjV-yt-E7d"/>
+                <outlet property="profileImageView" destination="XPg-Ua-1zJ" id="Aks-Ei-2q6"/>
+                <outlet property="userDetailsStackView" destination="N1v-Rf-SZG" id="G4S-Kz-NST"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="247.37631184407797"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="profile2" width="100" height="102"/>
+        <namedColor name="BleuDeFrance">
+            <color red="0.20392156862745098" green="0.59607843137254901" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DoveGray">
+            <color red="0.42352941176470588" green="0.42745098039215684" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Nero">
+            <color red="0.14117647058823529" green="0.14901960784313725" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
