@@ -36,6 +36,8 @@
 		72968B1221B35157003E06DD /* ActivityFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72968B1021B35157003E06DD /* ActivityFeedViewController.swift */; };
 		72968B1321B35157003E06DD /* ActivityFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72968B1121B35157003E06DD /* ActivityFeedViewController.xib */; };
 		72968B1621B354BA003E06DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72968B1521B354BA003E06DD /* Main.storyboard */; };
+		72968B1921B35746003E06DD /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72968B1721B35746003E06DD /* PostTableViewCell.swift */; };
+		72968B1A21B35746003E06DD /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72968B1821B35746003E06DD /* PostTableViewCell.xib */; };
 		7755B46584CFC6B4354712A9 /* Pods_firekitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39400F114F1ECCB3ED38A973 /* Pods_firekitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,8 @@
 		72968B1021B35157003E06DD /* ActivityFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedViewController.swift; sourceTree = "<group>"; };
 		72968B1121B35157003E06DD /* ActivityFeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityFeedViewController.xib; sourceTree = "<group>"; };
 		72968B1521B354BA003E06DD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		72968B1721B35746003E06DD /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		72968B1821B35746003E06DD /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		B840459F6C2BA890E3625FAC /* Pods-firekitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firekitTests/Pods-firekitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF89B085B0251F7EB9B6E3EA /* Pods_firekit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firekit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F951D6E7A3B05035A069E89A /* Pods-firekitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-firekitTests/Pods-firekitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -243,6 +247,8 @@
 			children = (
 				72968B1021B35157003E06DD /* ActivityFeedViewController.swift */,
 				72968B1121B35157003E06DD /* ActivityFeedViewController.xib */,
+				72968B1721B35746003E06DD /* PostTableViewCell.swift */,
+				72968B1821B35746003E06DD /* PostTableViewCell.xib */,
 			);
 			path = ActivityFeed;
 			sourceTree = "<group>";
@@ -366,6 +372,7 @@
 				7284AD2221B24CF500F1C11C /* ComposerView.xib in Resources */,
 				72968B1321B35157003E06DD /* ActivityFeedViewController.xib in Resources */,
 				7284AD0B21B1EE3F00F1C11C /* Colors.xcassets in Resources */,
+				72968B1A21B35746003E06DD /* PostTableViewCell.xib in Resources */,
 				7284ACF221B1E24A00F1C11C /* Assets.xcassets in Resources */,
 				72968AF821B32CFF003E06DD /* ChatListViewController.xib in Resources */,
 			);
@@ -480,6 +487,7 @@
 			files = (
 				72968AEE21B25E75003E06DD /* MessagesReceivedTableViewCell.swift in Sources */,
 				72968B0721B346D3003E06DD /* DataAccessManager.swift in Sources */,
+				72968B1921B35746003E06DD /* PostTableViewCell.swift in Sources */,
 				7284AD2021B24CE600F1C11C /* ComposerView.swift in Sources */,
 				7284AD1921B1EE9D00F1C11C /* LoginViewController.swift in Sources */,
 				72968B1221B35157003E06DD /* ActivityFeedViewController.swift in Sources */,
