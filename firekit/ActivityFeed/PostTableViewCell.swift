@@ -15,6 +15,13 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var userLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     
+    @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var commentsButton: UIButton!
+    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
+    
+    var liked = false
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -27,4 +34,14 @@ class PostTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    private func setLikeButtonImage() {
+        let likeButtonImage = liked ? UIImage.init(named: "likeFilled") : UIImage.init(named: "like")
+        
+        self.likeButton.setImage(likeButtonImage, for: .normal)
+    }
+    
+    @IBAction func likeButtonPressed(_ sender: Any) {
+        self.liked = !liked
+        self.setLikeButtonImage()
+    }
 }

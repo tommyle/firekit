@@ -35,13 +35,13 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have got a cat. Her name is Matilda. She is quite old for a cat. She is eleven years old." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bo4-86-0s9">
-                                <rect key="frame" x="8" y="362" width="288" height="23"/>
+                                <rect key="frame" x="12" y="362" width="280" height="19"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="w0X-q1-5Uk">
-                                <rect key="frame" x="8" y="395.5" width="288" height="30"/>
+                                <rect key="frame" x="12" y="391.5" width="280" height="30"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="njc-86-qcQ">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -57,13 +57,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Sara Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHz-ZH-UT3">
-                                        <rect key="frame" x="42" y="0.0" width="158.5" height="30"/>
+                                        <rect key="frame" x="42" y="0.0" width="150.5" height="30"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 minutes ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRP-BV-qM9">
-                                        <rect key="frame" x="212.5" y="0.0" width="75.5" height="30"/>
+                                        <rect key="frame" x="204.5" y="0.0" width="75.5" height="30"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
                                         <color key="textColor" name="DoveGray"/>
                                         <nil key="highlightedColor"/>
@@ -74,7 +74,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0rq-Zd-OCM">
-                                <rect key="frame" x="8" y="328" width="118" height="26"/>
+                                <rect key="frame" x="12" y="328" width="118" height="26"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ez3-jB-23W">
                                         <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
@@ -82,6 +82,9 @@
                                             <constraint firstAttribute="width" constant="26" id="gzM-Bx-7sm"/>
                                         </constraints>
                                         <state key="normal" image="like"/>
+                                        <connections>
+                                            <action selector="likeButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NPE-hB-76k"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTe-Iq-fsK">
                                         <rect key="frame" x="46" y="0.0" width="26" height="26"/>
@@ -103,7 +106,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHo-c4-DzO">
-                                <rect key="frame" x="270" y="328" width="26" height="26"/>
+                                <rect key="frame" x="266" y="328" width="26" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="4En-M4-hOR"/>
                                     <constraint firstAttribute="height" constant="26" id="SeC-q9-lPt"/>
@@ -115,18 +118,18 @@
                         <constraints>
                             <constraint firstItem="qTn-wy-pSU" firstAttribute="top" secondItem="rNZ-Fz-Xg2" secondAttribute="top" id="2WX-n2-Pbd"/>
                             <constraint firstItem="qTn-wy-pSU" firstAttribute="leading" secondItem="rNZ-Fz-Xg2" secondAttribute="leading" id="3L7-2Q-p79"/>
-                            <constraint firstItem="w0X-q1-5Uk" firstAttribute="leading" secondItem="rNZ-Fz-Xg2" secondAttribute="leading" constant="8" id="6Ju-Jz-0pU"/>
+                            <constraint firstItem="w0X-q1-5Uk" firstAttribute="leading" secondItem="rNZ-Fz-Xg2" secondAttribute="leading" constant="12" id="6Ju-Jz-0pU"/>
                             <constraint firstItem="w0X-q1-5Uk" firstAttribute="top" secondItem="Bo4-86-0s9" secondAttribute="bottom" constant="10.5" id="DuY-ep-F26"/>
                             <constraint firstItem="Bo4-86-0s9" firstAttribute="top" secondItem="0rq-Zd-OCM" secondAttribute="bottom" constant="8" id="G6k-lo-EB6"/>
-                            <constraint firstAttribute="trailing" secondItem="qHo-c4-DzO" secondAttribute="trailing" constant="8" id="Im6-JV-ZLe"/>
-                            <constraint firstAttribute="trailing" secondItem="w0X-q1-5Uk" secondAttribute="trailing" constant="8" id="JY8-Uk-Xrs"/>
+                            <constraint firstAttribute="trailing" secondItem="qHo-c4-DzO" secondAttribute="trailing" constant="12" id="Im6-JV-ZLe"/>
+                            <constraint firstAttribute="trailing" secondItem="w0X-q1-5Uk" secondAttribute="trailing" constant="12" id="JY8-Uk-Xrs"/>
                             <constraint firstAttribute="trailing" secondItem="qTn-wy-pSU" secondAttribute="trailing" id="KFY-ii-kqW"/>
                             <constraint firstItem="0rq-Zd-OCM" firstAttribute="top" secondItem="qTn-wy-pSU" secondAttribute="bottom" constant="8" id="V8e-Ml-Ox4"/>
-                            <constraint firstItem="0rq-Zd-OCM" firstAttribute="leading" secondItem="rNZ-Fz-Xg2" secondAttribute="leading" constant="8" id="VAc-a7-qEx"/>
+                            <constraint firstItem="0rq-Zd-OCM" firstAttribute="leading" secondItem="rNZ-Fz-Xg2" secondAttribute="leading" constant="12" id="VAc-a7-qEx"/>
                             <constraint firstItem="qHo-c4-DzO" firstAttribute="top" secondItem="qTn-wy-pSU" secondAttribute="bottom" constant="8" id="aBO-8c-xiM"/>
-                            <constraint firstItem="Bo4-86-0s9" firstAttribute="leading" secondItem="rNZ-Fz-Xg2" secondAttribute="leading" constant="8" id="ctO-ML-5oj"/>
-                            <constraint firstAttribute="trailing" secondItem="Bo4-86-0s9" secondAttribute="trailing" constant="8" id="jOn-3W-t6C"/>
-                            <constraint firstAttribute="bottom" secondItem="w0X-q1-5Uk" secondAttribute="bottom" constant="8" id="sqb-u6-hb9"/>
+                            <constraint firstItem="Bo4-86-0s9" firstAttribute="leading" secondItem="rNZ-Fz-Xg2" secondAttribute="leading" constant="12" id="ctO-ML-5oj"/>
+                            <constraint firstAttribute="trailing" secondItem="Bo4-86-0s9" secondAttribute="trailing" constant="12" id="jOn-3W-t6C"/>
+                            <constraint firstAttribute="bottom" secondItem="w0X-q1-5Uk" secondAttribute="bottom" constant="12" id="sqb-u6-hb9"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -151,8 +154,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="commentsButton" destination="KTe-Iq-fsK" id="LdH-5e-aVB"/>
                 <outlet property="descriptionLabel" destination="Bo4-86-0s9" id="4un-5M-eVi"/>
+                <outlet property="likeButton" destination="ez3-jB-23W" id="IB7-KZ-Xht"/>
                 <outlet property="postImageView" destination="qTn-wy-pSU" id="hdc-6Y-HPr"/>
+                <outlet property="saveButton" destination="qHo-c4-DzO" id="wcz-Nm-jFO"/>
+                <outlet property="shareButton" destination="Vb2-7V-Bqj" id="0QF-su-Wi0"/>
                 <outlet property="timeLabel" destination="sRP-BV-qM9" id="xth-j3-4fh"/>
                 <outlet property="userLabel" destination="vHz-ZH-UT3" id="629-Bn-4UU"/>
             </connections>

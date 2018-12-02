@@ -31,6 +31,8 @@ class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as! PostTableViewCell
         
+        cell.postImageView.image = UIImage.init(named: "post\(indexPath.row + 1)")
+        
         return cell
     }
     
