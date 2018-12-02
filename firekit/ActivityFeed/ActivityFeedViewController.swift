@@ -8,16 +8,31 @@
 
 import UIKit
 
-class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var feedTableView: UITableView!
+    var storiesCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.feedTableView.register(UINib(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostTableViewCell")
         
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 8, left: 10, bottom: 4, right: 10)
+        layout.itemSize = CGSize(width: 66, height: 86)
+        layout.scrollDirection = .horizontal
+        let frame = CGRect(x: 0, y: 0, width: 2000, height: 98)
+        
+        self.storiesCollectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
+        self.storiesCollectionView.backgroundColor = UIColor.clear
+        self.storiesCollectionView.register(UINib.init(nibName: "StoriesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "StoriesCollectionViewCell")
+        self.storiesCollectionView.delegate = self
+        self.storiesCollectionView.dataSource = self
+        self.storiesCollectionView.showsHorizontalScrollIndicator = false
+        self.storiesCollectionView.addBorder(toSide: .Bottom, withColor: UIColor.init(named: "Magnesium")!.cgColor, andThickness: 0.5)
+        
+        self.feedTableView.register(UINib(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostTableViewCell")
         self.feedTableView.tableFooterView = UIView()
+        self.feedTableView.tableHeaderView = storiesCollectionView
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -43,4 +58,17 @@ class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoriesCollectionViewCell", for: indexPath) as! StoriesCollectionViewCell
+        
+        cell.profileImage.image = UIImage.init(named: "profile\((indexPath.row % 5) + 1)")
+        
+        return cell
+    }
+    
 }
