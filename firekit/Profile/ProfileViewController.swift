@@ -15,6 +15,8 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Profile"
+        
         self.postsCollectionView.register(UINib.init(nibName: "PostCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PostCollectionViewCell")
         
         self.postsCollectionView.register(UINib.init(nibName: "ProfileCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader , withReuseIdentifier: "ProfileCollectionReusableView")

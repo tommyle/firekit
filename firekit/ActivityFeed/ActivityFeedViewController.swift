@@ -16,6 +16,8 @@ class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Home"
+        
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 8, left: 10, bottom: 4, right: 10)
         layout.itemSize = CGSize(width: 66, height: 86)

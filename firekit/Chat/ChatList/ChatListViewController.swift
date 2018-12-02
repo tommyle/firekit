@@ -15,6 +15,8 @@ class ChatListViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Messages"
+        
         self.addDismissKeyboardGesture()
         
         self.chatListTableView.register(UINib(nibName: "ChartListTableViewCell", bundle: nil), forCellReuseIdentifier: "ChartListTableViewCell")
