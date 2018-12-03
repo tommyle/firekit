@@ -10,11 +10,11 @@ import UIKit
 
 protocol PostTableViewCellDelegate: class {
     func likeButtonPressed(_ sender: Any)
-    func shareButtonPressed(_ sender: Any)
+    func shareButtonPressed(_ image: UIImage)
     func commentsButtonPressed(_ sender: Any)
 }
 
-class PostTableViewCell: UITableViewCell, PostTableViewCellDelegate {
+class PostTableViewCell: UITableViewCell {
     
     weak var delegate: PostTableViewCellDelegate?
 
@@ -59,8 +59,15 @@ class PostTableViewCell: UITableViewCell, PostTableViewCellDelegate {
         delegate?.commentsButtonPressed(sender)
     }
     
-    @IBAction func shareButtonPressed(_ sender: Any) {
-        delegate?.shareButtonPressed(sender)
+    @IBAction func shareButtonPressed(_ iamge: Any) {
+        self.shareButtonPressed(self.postImageView.image!)
+    }
+}
+
+extension PostTableViewCell: PostTableViewCellDelegate {
+    
+    func shareButtonPressed(_ image: UIImage) {
+        delegate?.shareButtonPressed(image)
     }
     
 }
