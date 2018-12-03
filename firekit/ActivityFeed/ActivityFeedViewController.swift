@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
-    
+class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource, PostTableViewCellDelegate {
+
     @IBOutlet weak var feedTableView: UITableView!
     var storiesCollectionView: UICollectionView!
     
@@ -48,6 +48,7 @@ class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as! PostTableViewCell
         
+        cell.delegate = self
         cell.postImageView.image = UIImage.init(named: "post\(indexPath.row + 1)")
         
         return cell
@@ -73,4 +74,15 @@ class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITable
         return cell
     }
     
+    func commentsButtonPressed(_ sender: Any) {
+        let commentsViewController = CommentsViewController()
+        commentsViewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(commentsViewController, animated: true)
+    }
+    
+    func likeButtonPressed(_ sender: Any) {
+    }
+    
+    func shareButtonPressed(_ sender: Any) {
+    }
 }

@@ -8,7 +8,15 @@
 
 import UIKit
 
-class PostTableViewCell: UITableViewCell {
+protocol PostTableViewCellDelegate: class {
+    func likeButtonPressed(_ sender: Any)
+    func shareButtonPressed(_ sender: Any)
+    func commentsButtonPressed(_ sender: Any)
+}
+
+class PostTableViewCell: UITableViewCell, PostTableViewCellDelegate {
+    
+    weak var delegate: PostTableViewCellDelegate?
 
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -43,5 +51,16 @@ class PostTableViewCell: UITableViewCell {
     @IBAction func likeButtonPressed(_ sender: Any) {
         self.liked = !liked
         self.setLikeButtonImage()
+        
+        delegate?.likeButtonPressed(sender)
     }
+    
+    @IBAction func commentsButtonPressed(_ sender: Any) {
+        delegate?.commentsButtonPressed(sender)
+    }
+    
+    @IBAction func shareButtonPressed(_ sender: Any) {
+        delegate?.shareButtonPressed(sender)
+    }
+    
 }

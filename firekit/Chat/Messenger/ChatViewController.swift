@@ -31,7 +31,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewWillAppear(_ animated: Bool) {
         if (!self.viewHasBeenSet) {
             self.viewHasBeenSet = true
-            self.scrollToBottom(self.chatTableView, DataAccessManager.shared.messages as Array<Any>)
+            self.chatTableView.scrollToBottom(DataAccessManager.shared.messages as Array<Any>)
         }
     }
     
@@ -62,13 +62,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         return cell
     }
-    
-    func scrollToBottom(_ tableView: UITableView, _ data: Array<Any>){
-        DispatchQueue.main.async {
-            let indexPath = IndexPath(row: data.count - 1, section: 0)
-            tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
-        }
-    }
 }
 
 extension ChatViewController: ComposerViewDelegate {
@@ -80,10 +73,10 @@ extension ChatViewController: ComposerViewDelegate {
         self.chatTableView.insertRows(at: [IndexPath(row: DataAccessManager.shared.messages.count - 1, section: 0)], with: .automatic)
         self.chatTableView.endUpdates()
         
-        self.scrollToBottom(self.chatTableView, DataAccessManager.shared.messages as Array<Any>)
+        self.chatTableView.scrollToBottom(DataAccessManager.shared.messages as Array<Any>)
     }
     
     func didBeginEditing(_ sender: UITextField) {
-        self.scrollToBottom(self.chatTableView, DataAccessManager.shared.messages as Array<Any>)
+        self.chatTableView.scrollToBottom(DataAccessManager.shared.messages as Array<Any>)
     }
 }
