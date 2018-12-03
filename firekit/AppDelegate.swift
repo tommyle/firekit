@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var tabBarViewController = UITabBarController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         UIApplication.shared.applicationSupportsShakeToEdit = false
@@ -32,8 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor.nero
         UITabBar.appearance().unselectedItemTintColor = UIColor.nero
         
-        let tabBarViewController = UITabBarController()
-        tabBarViewController.viewControllers = [UINavigationController.init(rootViewController: activityFeedViewController),
+        self.tabBarViewController.viewControllers = [UINavigationController.init(rootViewController: activityFeedViewController),
                                                 UINavigationController.init(rootViewController: chatListViewController),
                                                 UINavigationController.init(rootViewController: profileViewController)]
             

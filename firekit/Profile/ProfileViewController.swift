@@ -17,6 +17,9 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         
         self.title = "Profile"
         
+        let logoutButton = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutButtonTapped))
+        navigationItem.rightBarButtonItem = logoutButton
+        
         self.postsCollectionView.register(UINib.init(nibName: "PostCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PostCollectionViewCell")
         
         self.postsCollectionView.register(UINib.init(nibName: "ProfileCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader , withReuseIdentifier: "ProfileCollectionReusableView")
@@ -54,4 +57,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         return headerView;
     }
     
+    @objc func logoutButtonTapped() {
+        UIApplication.shared.windows[0].rootViewController = LoginViewController()
+    }
 }

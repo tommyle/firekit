@@ -27,8 +27,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonTapped(_ sender: Any) {
-        let chatViewController = ChatViewController()
-        self.present(chatViewController, animated: true, completion: nil)
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = appDelegate.tabBarViewController
     }
 }
 
