@@ -86,9 +86,7 @@ class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITable
     func shareButtonPressed(_ image: UIImage) {
         let imageToShare = [image]
         let activityViewController = UIActivityViewController(activityItems: imageToShare as [Any], applicationActivities: nil)
-        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
-        
-        activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
+        activityViewController.popoverPresentationController?.sourceView = self.view
         
         self.present(activityViewController, animated: true, completion: nil)
     }
