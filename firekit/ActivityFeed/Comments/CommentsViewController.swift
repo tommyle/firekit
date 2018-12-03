@@ -14,6 +14,8 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var commentsTableView: UITableView!
     @IBOutlet weak var composerView: ComposerView!
     
+    let data = DataAccessManager.shared.users
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +26,8 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
         KeyboardAvoiding.avoidingView = self.composerView
 
         self.commentsTableView.register(UINib(nibName: "CommentsTableViewCell", bundle: nil), forCellReuseIdentifier: "CommentsTableViewCell")
+        
+        self.commentsTableView.scrollToBottom(self.data as Array<Any>)
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -31,13 +35,13 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataAccessManager.shared.users.count
+        return self.data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CommentsTableViewCell") as! CommentsTableViewCell
         
-        guard let user = DataAccessManager.shared.users[indexPath.row] else {
+        guard let user = self.data[indexPath.row] else {
             return cell
         }
 
@@ -66,6 +70,6 @@ extension CommentsViewController: ComposerViewDelegate {
     }
     
     func didBeginEditing(_ sender: UITextField) {
-//        self.commentsTableView.scrollToBottom(DataAccessManager.shared.users as Array<Any>)
+        self.commentsTableView.scrollToBottom(self.data as Array<Any>)
     }
 }
