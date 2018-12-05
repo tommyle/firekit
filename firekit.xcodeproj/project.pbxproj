@@ -10,6 +10,7 @@
 		5A82516F6D084B2B8B555D74 /* Pods_firekit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89B085B0251F7EB9B6E3EA /* Pods_firekit.framework */; };
 		7235F62521B75581002E9578 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235F62421B75581002E9578 /* Notification.swift */; };
 		7235F62721B758C9002E9578 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235F62621B758C9002E9578 /* DateHelper.swift */; };
+		7235F62921B7945B002E9578 /* StyleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235F62821B7945B002E9578 /* StyleHelper.swift */; };
 		7284ACEB21B1E24900F1C11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284ACEA21B1E24900F1C11C /* AppDelegate.swift */; };
 		7284ACF221B1E24A00F1C11C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7284ACF121B1E24A00F1C11C /* Assets.xcassets */; };
 		7284ACF521B1E24A00F1C11C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7284ACF321B1E24A00F1C11C /* LaunchScreen.storyboard */; };
@@ -82,6 +83,7 @@
 		6C52F7B3F23BDB0900D000B9 /* Pods-firekit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekit.release.xcconfig"; path = "Pods/Target Support Files/Pods-firekit/Pods-firekit.release.xcconfig"; sourceTree = "<group>"; };
 		7235F62421B75581002E9578 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		7235F62621B758C9002E9578 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		7235F62821B7945B002E9578 /* StyleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleHelper.swift; sourceTree = "<group>"; };
 		7284ACE721B1E24900F1C11C /* firekit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firekit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7284ACEA21B1E24900F1C11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		7284ACF121B1E24A00F1C11C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				72968B2421B3A797003E06DD /* UIViewHelper.swift */,
+				7235F62821B7945B002E9578 /* StyleHelper.swift */,
 				7235F62621B758C9002E9578 /* DateHelper.swift */,
 				72EFAB4121B4C2CC00BC896B /* UITableViewHelper.swift */,
 				72EFAB2C21B4988C00BC896B /* UIColorHelper.swift */,
@@ -627,6 +630,7 @@
 				72968B1221B35157003E06DD /* ActivityFeedViewController.swift in Sources */,
 				7235F62721B758C9002E9578 /* DateHelper.swift in Sources */,
 				72968B2821B4471B003E06DD /* PostCollectionViewCell.swift in Sources */,
+				7235F62921B7945B002E9578 /* StyleHelper.swift in Sources */,
 				72968B0D21B350B1003E06DD /* ProfileViewController.swift in Sources */,
 				72968B0521B346BC003E06DD /* User.swift in Sources */,
 				72968AFD21B32D5B003E06DD /* ChartListTableViewCell.swift in Sources */,

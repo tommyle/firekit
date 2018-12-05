@@ -49,8 +49,8 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="saradoe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50n-4p-rnE">
-                        <rect key="frame" x="0.0" y="62" width="66" height="13.5"/>
-                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                        <rect key="frame" x="0.0" y="62" width="66" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" name="Nero"/>
                         <nil key="highlightedColor"/>
                     </label>

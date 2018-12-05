@@ -39,15 +39,15 @@ class DataAccessManager: NSObject {
                  User(userName: "julia_doe", firstName: "Julia", lastName: "Doe", profileImage: UIImage.init(named: "profile4")!),
                  User(userName: "john_doe", firstName: "John", lastName: "Doe", profileImage: UIImage.init(named: "profile5")!)]
         
-        notifications = [Notification(user: users[0]!, type: .Liked, date: Date.stringToDate("2018-04-14T10:44:00+0000"), likedImage: UIImage.init(named: "post1")!),
-                         Notification(user: users[1]!, type: .Liked, date: Date.stringToDate("2017-04-14T10:44:00+0000"), likedImage: UIImage.init(named: "post2")!),
-                         Notification(user: users[3]!, type: .Liked, date: Date.stringToDate("2016-04-14T10:44:00+0000"), likedImage: UIImage.init(named: "post3")!),
-                         Notification(user: users[4]!, type: .Liked, date: Date.stringToDate("2014-04-14T10:44:00+0000"), likedImage: UIImage.init(named: "post4")!),
-                         Notification(user: users[0]!, type: .Followed, date: Date.stringToDate("2013-04-14T10:44:00+0000")),
-                         Notification(user: users[1]!, type: .Liked, date: Date.stringToDate("2012-04-14T10:44:00+0000"), likedImage: UIImage.init(named: "post5")!),
-                         Notification(user: users[2]!, type: .Followed, date: Date.stringToDate("2011-04-14T10:44:00+0000")),
-                         Notification(user: users[3]!, type: .Followed, date: Date.stringToDate("2010-04-14T10:44:00+0000")),
-                         Notification(user: users[4]!, type: .Liked, date: Date.stringToDate("2009-04-14T10:44:00+0000"), likedImage: UIImage.init(named: "post6")!)]
+        notifications = [Notification(user: users[0]!, type: .Liked, date: Date.dateMinus(day: 1), likedImage: UIImage.init(named: "post1")!),
+                         Notification(user: users[1]!, type: .Liked, date: Date.dateMinus(day: 1), likedImage: UIImage.init(named: "post2")!),
+                         Notification(user: users[3]!, type: .Liked, date: Date.dateMinus(day: 1), likedImage: UIImage.init(named: "post3")!),
+                         Notification(user: users[4]!, type: .Liked, date: Date.dateMinus(day: 2), likedImage: UIImage.init(named: "post4")!),
+                         Notification(user: users[0]!, type: .Followed, date: Date.dateMinus(day: 2)),
+                         Notification(user: users[1]!, type: .Liked, date: Date.dateMinus(day: 2), likedImage: UIImage.init(named: "post5")!),
+                         Notification(user: users[2]!, type: .Followed, date: Date.dateMinus(day: 3)),
+                         Notification(user: users[3]!, type: .Followed, date: Date.dateMinus(day: 3)),
+                         Notification(user: users[4]!, type: .Liked, date: Date.dateMinus(day: 5), likedImage: UIImage.init(named: "post6")!)]
     }
     
     

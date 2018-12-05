@@ -33,6 +33,12 @@ extension Date {
         }
     }
     
+    static func dateMinus(day: Int) -> Date {
+        var dayComp = DateComponents()
+        dayComp.day = -1 * day
+        return Calendar.current.date(byAdding: dayComp, to: Date()) ?? Date()
+    }
+    
     static func stringToDate(_ isoDate: String) -> Date! {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

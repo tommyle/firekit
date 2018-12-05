@@ -21,13 +21,13 @@
                     <rect key="frame" x="2" y="2" width="316" height="276"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sara Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qky-qG-a14">
-                            <rect key="frame" x="12" y="144" width="292" height="20.5"/>
-                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                            <rect key="frame" x="12" y="144" width="292" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrJ-j6-e3a">
-                            <rect key="frame" x="68" y="176.5" width="180" height="30"/>
+                            <rect key="frame" x="68" y="177.5" width="180" height="30"/>
                             <color key="backgroundColor" name="BleuDeFrance"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="QnS-RD-C6K"/>
@@ -44,54 +44,54 @@
                             </userDefinedRuntimeAttributes>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="1K9-eZ-86h">
-                            <rect key="frame" x="34" y="221.5" width="248" height="38.5"/>
+                            <rect key="frame" x="32" y="219.5" width="252.5" height="40.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="N1v-Rf-SZG">
-                                    <rect key="frame" x="0.0" y="0.0" width="60" height="38.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="61.5" height="40.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="87" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlq-ct-yjB">
-                                            <rect key="frame" x="0.0" y="0.0" width="60" height="20.5"/>
-                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="61.5" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" name="Nero"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnv-nd-0c3">
-                                            <rect key="frame" x="0.0" y="22.5" width="60" height="16"/>
-                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <rect key="frame" x="0.0" y="23.5" width="61.5" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" name="DoveGray"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="X7R-3H-Fc8">
-                                    <rect key="frame" x="94" y="0.0" width="60" height="38.5"/>
+                                    <rect key="frame" x="95.5" y="0.0" width="61.5" height="40.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30.5k" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sV4-ji-Uqf">
-                                            <rect key="frame" x="0.0" y="0.0" width="60" height="20.5"/>
-                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="61.5" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" name="Nero"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noF-KJ-c6O">
-                                            <rect key="frame" x="0.0" y="22.5" width="60" height="16"/>
-                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <rect key="frame" x="0.0" y="23.5" width="61.5" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" name="DoveGray"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Te4-aL-NA0">
-                                    <rect key="frame" x="188" y="0.0" width="60" height="38.5"/>
+                                    <rect key="frame" x="191" y="0.0" width="61.5" height="40.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="190" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bha-uL-EDm">
-                                            <rect key="frame" x="0.0" y="0.0" width="60" height="20.5"/>
-                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="61.5" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" name="Nero"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Following" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxJ-tv-4Hk">
-                                            <rect key="frame" x="0.0" y="22.5" width="60" height="16"/>
-                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <rect key="frame" x="0.0" y="23.5" width="61.5" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" name="DoveGray"/>
                                             <nil key="highlightedColor"/>
                                         </label>
