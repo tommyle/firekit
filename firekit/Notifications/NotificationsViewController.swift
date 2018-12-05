@@ -27,12 +27,12 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.data.count
+        return self.data.count * 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let notification = self.data[indexPath.row] else {
+        guard let notification = self.data[indexPath.row % self.data.count] else {
             return UITableViewCell()
         }
 
