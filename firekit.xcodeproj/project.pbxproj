@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5A82516F6D084B2B8B555D74 /* Pods_firekit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF89B085B0251F7EB9B6E3EA /* Pods_firekit.framework */; };
+		7235F62521B75581002E9578 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235F62421B75581002E9578 /* Notification.swift */; };
+		7235F62721B758C9002E9578 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235F62621B758C9002E9578 /* DateHelper.swift */; };
 		7284ACEB21B1E24900F1C11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284ACEA21B1E24900F1C11C /* AppDelegate.swift */; };
 		7284ACF221B1E24A00F1C11C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7284ACF121B1E24A00F1C11C /* Assets.xcassets */; };
 		7284ACF521B1E24A00F1C11C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7284ACF321B1E24A00F1C11C /* LaunchScreen.storyboard */; };
@@ -78,6 +80,8 @@
 		390A4FF63E5E5848328BADE0 /* Pods-firekit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firekit/Pods-firekit.debug.xcconfig"; sourceTree = "<group>"; };
 		39400F114F1ECCB3ED38A973 /* Pods_firekitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firekitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C52F7B3F23BDB0900D000B9 /* Pods-firekit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekit.release.xcconfig"; path = "Pods/Target Support Files/Pods-firekit/Pods-firekit.release.xcconfig"; sourceTree = "<group>"; };
+		7235F62421B75581002E9578 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		7235F62621B758C9002E9578 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		7284ACE721B1E24900F1C11C /* firekit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firekit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7284ACEA21B1E24900F1C11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		7284ACF121B1E24A00F1C11C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -242,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				72968B2421B3A797003E06DD /* UIViewHelper.swift */,
+				7235F62621B758C9002E9578 /* DateHelper.swift */,
 				72EFAB4121B4C2CC00BC896B /* UITableViewHelper.swift */,
 				72EFAB2C21B4988C00BC896B /* UIColorHelper.swift */,
 				72968AF121B2F09A003E06DD /* ViewControllerHelper.swift */,
@@ -279,6 +284,7 @@
 			children = (
 				72968B0421B346BC003E06DD /* User.swift */,
 				72968B0821B34893003E06DD /* Message.swift */,
+				7235F62421B75581002E9578 /* Notification.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -606,6 +612,7 @@
 			files = (
 				72EFAB6A21B5F4BD00BC896B /* NotificationTableViewCell.swift in Sources */,
 				72968AEE21B25E75003E06DD /* MessagesReceivedTableViewCell.swift in Sources */,
+				7235F62521B75581002E9578 /* Notification.swift in Sources */,
 				72968B0721B346D3003E06DD /* DataAccessManager.swift in Sources */,
 				72EFAB3621B49C2000BC896B /* CommentsViewController.swift in Sources */,
 				72EFAB6621B5F4A700BC896B /* NotificationsViewController.swift in Sources */,
@@ -618,6 +625,7 @@
 				72EFAB2D21B4988C00BC896B /* UIColorHelper.swift in Sources */,
 				7284AD1921B1EE9D00F1C11C /* LoginViewController.swift in Sources */,
 				72968B1221B35157003E06DD /* ActivityFeedViewController.swift in Sources */,
+				7235F62721B758C9002E9578 /* DateHelper.swift in Sources */,
 				72968B2821B4471B003E06DD /* PostCollectionViewCell.swift in Sources */,
 				72968B0D21B350B1003E06DD /* ProfileViewController.swift in Sources */,
 				72968B0521B346BC003E06DD /* User.swift in Sources */,

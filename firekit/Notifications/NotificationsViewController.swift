@@ -11,7 +11,7 @@ import UIKit
 class NotificationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var notificationsTableView: UITableView!
-    var data = DataAccessManager.shared.users
+    var data = DataAccessManager.shared.notifications
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,28 +27,29 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.data.count * 3
+        return self.data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let user = self.data[indexPath.row % 5] else {
+        guard let notification = self.data[indexPath.row] else {
             return UITableViewCell()
         }
 
-        if (indexPath.row % 3 == 0) {
+        if (notification.type == .Followed) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationFollowTableViewCell") as! NotificationFollowTableViewCell
             
-            cell.profileImageView.image = user.profileImage
-            cell.notificationLabel.text = "\(user.firstName!) \(user.lastName!) started following you. 3d"
+            cell.profileImageView.image = notification.user.profileImage
+            cell.notificationLabel.text = notification.text
             
             return cell
         }
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell") as! NotificationTableViewCell
             
-            cell.profileImageView.image = user.profileImage
-            cell.notificationLabel.text = "\(user.firstName!) \(user.lastName!) liked your post. 2d"
+            cell.profileImageView.image = notification.user.profileImage
+            cell.notificationLabel.text = notification.text
+            cell.likedImageView.image = notification.likedImage
             
             return cell
             

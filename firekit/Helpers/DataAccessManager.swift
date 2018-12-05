@@ -12,7 +12,12 @@ class DataAccessManager: NSObject {
     
     static let shared = DataAccessManager()
     
-    var messages = [Message(text: "Hello this is B", type: .Sent),
+    var messages = [Message?]()
+    var users = [User?]()
+    var notifications = [Notification?]()
+    
+    private override init() {
+        messages = [Message(text: "Hello this is B", type: .Sent),
                     Message(text: "Hi B how are you?", type: .Received),
                     Message(text: "Hi B how are you? Hi B how are you? Hi B how are you?", type: .Sent),
                     Message(text: "Hi B how are you?", type: .Received),
@@ -27,10 +32,23 @@ class DataAccessManager: NSObject {
                     Message(text: "Hi B how are you?", type: .Received),
                     Message(text: "Hi B how are you? Hi B how are you? Hi B how are you?", type: .Received),
                     Message(text: "Hi B how are you?", type: .Received)]
+        
+        users = [User(userName: "sara_doe", firstName: "Sara", lastName: "Doe", profileImage: UIImage.init(named: "profile1")!),
+                 User(userName: "jennifer_doe", firstName: "Jennifer", lastName: "Doe", profileImage: UIImage.init(named: "profile2")!),
+                 User(userName: "megan_doe", firstName: "Megan", lastName: "Doe", profileImage: UIImage.init(named: "profile3")!),
+                 User(userName: "julia_doe", firstName: "Julia", lastName: "Doe", profileImage: UIImage.init(named: "profile4")!),
+                 User(userName: "john_doe", firstName: "John", lastName: "Doe", profileImage: UIImage.init(named: "profile5")!)]
+        
+        notifications = [Notification(user: users[0]!, type: .Liked, date: Date.stringToDate("2018-04-14T10:44:00+0000"), likedImage: UIImage.init(named: "post1")!),
+                         Notification(user: users[1]!, type: .Liked, date: Date.stringToDate("2017-04-14T10:44:00+0000"), likedImage: UIImage.init(named: "post2")!),
+                         Notification(user: users[3]!, type: .Liked, date: Date.stringToDate("2016-04-14T10:44:00+0000"), likedImage: UIImage.init(named: "post3")!),
+                         Notification(user: users[4]!, type: .Liked, date: Date.stringToDate("2014-04-14T10:44:00+0000"), likedImage: UIImage.init(named: "post4")!),
+                         Notification(user: users[0]!, type: .Followed, date: Date.stringToDate("2013-04-14T10:44:00+0000")),
+                         Notification(user: users[1]!, type: .Liked, date: Date.stringToDate("2012-04-14T10:44:00+0000"), likedImage: UIImage.init(named: "post5")!),
+                         Notification(user: users[2]!, type: .Followed, date: Date.stringToDate("2011-04-14T10:44:00+0000")),
+                         Notification(user: users[3]!, type: .Followed, date: Date.stringToDate("2010-04-14T10:44:00+0000")),
+                         Notification(user: users[4]!, type: .Liked, date: Date.stringToDate("2009-04-14T10:44:00+0000"), likedImage: UIImage.init(named: "post6")!)]
+    }
     
-    var users = [User(firstName: "Sara", lastName: "Doe", profileImage: UIImage.init(named: "profile1")!),
-                 User(firstName: "Jennifer", lastName: "Doe", profileImage: UIImage.init(named: "profile2")!),
-                 User(firstName: "Megan", lastName: "Doe", profileImage: UIImage.init(named: "profile3")!),
-                 User(firstName: "Julia", lastName: "Doe", profileImage: UIImage.init(named: "profile4")!),
-                 User(firstName: "John", lastName: "Doe", profileImage: UIImage.init(named: "profile5")!)]
+    
 }
