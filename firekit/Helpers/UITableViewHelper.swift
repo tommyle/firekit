@@ -9,12 +9,12 @@
 import UIKit
 
 extension UITableView {
-    
-    func scrollToBottom(_ data: Array<Any>){
+
+    func scrollToBottom(_ data: Array<Any>) {
         DispatchQueue.main.async {
             let indexPath = IndexPath(row: data.count - 1, section: 0)
             self.scrollToRow(at: indexPath, at: .bottom, animated: true)
         }
     }
-    
+
 }

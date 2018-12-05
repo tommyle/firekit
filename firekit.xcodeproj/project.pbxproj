@@ -403,6 +403,7 @@
 				7284ACE521B1E24900F1C11C /* Resources */,
 				D7CDBC90466A343A5BD0A167 /* [CP] Embed Pods Frameworks */,
 				10934F76B3AD7E7B780EECD6 /* [CP] Copy Pods Resources */,
+				7235F62A21B82F44002E9578 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -560,6 +561,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firekitTests/Pods-firekitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		7235F62A21B82F44002E9578 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		80E004094FF6889B706E447B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

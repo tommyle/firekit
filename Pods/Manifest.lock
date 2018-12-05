@@ -1,12 +1,15 @@
 PODS:
   - IHKeyboardAvoiding (4.3)
+  - SwiftLint (0.29.1)
 
 DEPENDENCIES:
   - IHKeyboardAvoiding
+  - SwiftLint
 
 SPEC CHECKSUMS:
   IHKeyboardAvoiding: e6a8f06434baf4c3b45825c3eedb35cea5d0d76b
+  SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
 
-PODFILE CHECKSUM: 5a6ce67b031373af9dddbee65ca47c7c20a34dcb
+PODFILE CHECKSUM: 11b1ff74e5492c6811e735fd395cc4a168f30c91
 
 COCOAPODS: 1.2.0

@@ -9,10 +9,10 @@
 import UIKit
 
 class NotificationFollowTableViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var profileImageView: ProfileImageView!
     @IBOutlet weak var notificationLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,5 +23,5 @@ class NotificationFollowTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

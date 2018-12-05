@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIColor {
-    
+
     static let nero = UIColor.init(named: "Nero")
     static let doveGray = UIColor.init(named: "DoveGray")
 }

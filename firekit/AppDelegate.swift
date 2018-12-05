@@ -16,15 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         UIApplication.shared.applicationSupportsShakeToEdit = false
-        
+
         let activityFeedViewController = ActivityFeedViewController()
         let activityTab = UITabBarItem.init(title: "Home", image: UIImage.init(named: "home"), selectedImage: UIImage.init(named: "homeFilled"))
         activityFeedViewController.tabBarItem = activityTab
-        
+
         let chatListViewController = ChatListViewController()
         let searchTab = UITabBarItem.init(title: "Messages", image: UIImage.init(named: "comment"), selectedImage: UIImage.init(named: "commentFilled"))
         chatListViewController.tabBarItem = searchTab
-        
+
         let notificationsViewController = NotificationsViewController()
         let notificationsTab = UITabBarItem.init(title: "Activity", image: UIImage.init(named: "like"), selectedImage: UIImage.init(named: "likeFilled"))
         notificationsViewController.tabBarItem = notificationsTab
@@ -32,17 +32,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let profileViewController = ProfileViewController()
         let profileTab = UITabBarItem.init(title: "Profile", image: UIImage.init(named: "profile"), selectedImage: UIImage.init(named: "profileFilled"))
         profileViewController.tabBarItem = profileTab
-        
+
         UITabBar.appearance().tintColor = UIColor.nero
         UITabBar.appearance().unselectedItemTintColor = UIColor.nero
-        
+
         self.tabBarViewController.viewControllers = [UINavigationController.init(rootViewController: activityFeedViewController),
                                                 UINavigationController.init(rootViewController: chatListViewController),
                                                 UINavigationController.init(rootViewController: notificationsViewController),
                                                 UINavigationController.init(rootViewController: profileViewController)]
-            
+
         window?.rootViewController = tabBarViewController
-        
+
         return true
     }
 
@@ -67,6 +67,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    
-}
 
+}

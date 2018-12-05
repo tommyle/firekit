@@ -7,6 +7,7 @@ target 'firekit' do
 
   # Pods for firekit
   pod 'IHKeyboardAvoiding'
+  pod 'SwiftLint'
 
   target 'firekitTests' do
     inherit! :search_paths

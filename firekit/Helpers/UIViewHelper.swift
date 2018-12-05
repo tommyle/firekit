@@ -6,10 +6,10 @@ enum ViewSide {
 
 extension UIView {
     func addBorder(toSide side: ViewSide, withColor color: CGColor, andThickness thickness: CGFloat) {
-        
+
         let border = CALayer()
         border.backgroundColor = color
-        
+
         switch side {
         case .Left:
             border.frame = CGRect(x: frame.minX, y: frame.minY, width: thickness, height: frame.height)
@@ -24,7 +24,7 @@ extension UIView {
             border.frame = CGRect(x: -375, y: frame.maxY - 1, width: frame.width, height: thickness)
             break
         }
-        
+
         layer.addSublayer(border)
     }
 }

@@ -16,12 +16,12 @@ enum MessageType {
 class Message: NSObject {
     var text: String!
     var type: MessageType!
-    
+
     convenience init?(text: String, type: MessageType) {
         self.init()
-        
+
         self.text = text
         self.type = type
     }
-    
+
 }

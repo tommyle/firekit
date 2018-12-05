@@ -9,13 +9,13 @@
 import UIKit
 
 class DataAccessManager: NSObject {
-    
+
     static let shared = DataAccessManager()
-    
+
     var messages = [Message?]()
     var users = [User?]()
     var notifications = [Notification?]()
-    
+
     private override init() {
         messages = [Message(text: "Hello this is B", type: .Sent),
                     Message(text: "Hi B how are you?", type: .Received),
@@ -32,13 +32,13 @@ class DataAccessManager: NSObject {
                     Message(text: "Hi B how are you?", type: .Received),
                     Message(text: "Hi B how are you? Hi B how are you? Hi B how are you?", type: .Received),
                     Message(text: "Hi B how are you?", type: .Received)]
-        
+
         users = [User(userName: "sara_doe", firstName: "Sara", lastName: "Doe", profileImage: UIImage.init(named: "profile1")!),
                  User(userName: "jennifer_doe", firstName: "Jennifer", lastName: "Doe", profileImage: UIImage.init(named: "profile2")!),
                  User(userName: "megan_doe", firstName: "Megan", lastName: "Doe", profileImage: UIImage.init(named: "profile3")!),
                  User(userName: "julia_doe", firstName: "Julia", lastName: "Doe", profileImage: UIImage.init(named: "profile4")!),
                  User(userName: "john_doe", firstName: "John", lastName: "Doe", profileImage: UIImage.init(named: "profile5")!)]
-        
+
         notifications = [Notification(user: users[0]!, type: .Liked, date: Date.dateMinus(day: 1), likedImage: UIImage.init(named: "post1")!),
                          Notification(user: users[1]!, type: .Liked, date: Date.dateMinus(day: 1), likedImage: UIImage.init(named: "post2")!),
                          Notification(user: users[3]!, type: .Liked, date: Date.dateMinus(day: 1), likedImage: UIImage.init(named: "post3")!),
@@ -49,6 +49,5 @@ class DataAccessManager: NSObject {
                          Notification(user: users[3]!, type: .Followed, date: Date.dateMinus(day: 3)),
                          Notification(user: users[4]!, type: .Liked, date: Date.dateMinus(day: 5), likedImage: UIImage.init(named: "post6")!)]
     }
-    
-    
+
 }

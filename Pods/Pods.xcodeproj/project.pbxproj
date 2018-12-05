@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0ECBE0A2291F098FE03B78499141E637 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		21662C64A371BDF77972D3EFD57A6252 /* KeyboardAvoiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD0400A6AB4681E2989E8519CF2A51 /* KeyboardAvoiding.swift */; };
+		21662C64A371BDF77972D3EFD57A6252 /* KeyboardAvoiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540A91C688DB57262C7C945A07050AED /* KeyboardAvoiding.swift */; };
 		37C3B33D03969137D747D4ABB5DF8247 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		4289A6BA490E261D4AFEBC4797706D6E /* IHKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 878ED9B597213B4B5F42A56E047C99C4 /* IHKeyboardAvoiding-dummy.m */; };
+		4289A6BA490E261D4AFEBC4797706D6E /* IHKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD59D03E6F5F60BF2453123CE0731A0 /* IHKeyboardAvoiding-dummy.m */; };
 		C54DA2E9A101E4C2511219612F8D2D95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		C90E10351CD6B4E34F101420159DE668 /* KeyboardDismissingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BBE962C67E10ADE4F16A2339E3C628 /* KeyboardDismissingView.swift */; };
+		C90E10351CD6B4E34F101420159DE668 /* KeyboardDismissingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB018692678B41BFBC9AE35529295B2A /* KeyboardDismissingView.swift */; };
 		C99C3E368D43DA6387DC30FCFD341B5E /* Pods-firekit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 106A740166D0628C8582536402A7AEBE /* Pods-firekit-dummy.m */; };
 		D3584C40BC9E9562D92E675C07C7FAC7 /* Pods-firekitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0016BF9E2EDB1FC93FD34EEB591A6C /* Pods-firekitTests-dummy.m */; };
 		E7432B2B4518AB5C23C0F1C685467192 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		EBA49F55F1E15D22FB191CD55127BC5E /* IHKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD638F842C331671F94B85460AFCF32 /* IHKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBA49F55F1E15D22FB191CD55127BC5E /* IHKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9558580D80BDEA26260401B8A8A9982 /* IHKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED535FE71EFCEDC1EAFB76BBD2EF9DAF /* Pods-firekitTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44172DB48B86D34DBE34FFBAEDFEAC29 /* Pods-firekitTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEABA1D6C9725BC7D968F9F92E370C14 /* Pods-firekit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 481D7D3C257A8F0BD47755743B6DD45D /* Pods-firekit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -34,35 +34,35 @@
 /* Begin PBXFileReference section */
 		106A740166D0628C8582536402A7AEBE /* Pods-firekit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-firekit-dummy.m"; sourceTree = "<group>"; };
 		152500D4545690E82CE9014B08BC2289 /* Pods-firekitTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-firekitTests.modulemap"; sourceTree = "<group>"; };
-		1CBD0400A6AB4681E2989E8519CF2A51 /* KeyboardAvoiding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardAvoiding.swift; path = Sources/KeyboardAvoiding.swift; sourceTree = "<group>"; };
 		1EE4406B246045517E2450E9D512FE92 /* Pods-firekitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-firekitTests.release.xcconfig"; sourceTree = "<group>"; };
 		2F3DFEC688FAF9088234406C577DBAF4 /* Pods-firekitTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-firekitTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		365EB042E744C81C3FB2A7C6A65B3F41 /* Pods-firekit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-firekit-resources.sh"; sourceTree = "<group>"; };
 		44172DB48B86D34DBE34FFBAEDFEAC29 /* Pods-firekitTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-firekitTests-umbrella.h"; sourceTree = "<group>"; };
 		481D7D3C257A8F0BD47755743B6DD45D /* Pods-firekit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-firekit-umbrella.h"; sourceTree = "<group>"; };
 		48F08DE8CA875CB4638500BFA80BE5EF /* Pods-firekit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-firekit.release.xcconfig"; sourceTree = "<group>"; };
-		4D2AEF7221795C0B8704C1E32F456037 /* IHKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IHKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
+		540A91C688DB57262C7C945A07050AED /* KeyboardAvoiding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardAvoiding.swift; path = Sources/KeyboardAvoiding.swift; sourceTree = "<group>"; };
 		5765EEFE197E5EFAAE37031596FF5D48 /* IHKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IHKeyboardAvoiding.framework; path = IHKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD59D03E6F5F60BF2453123CE0731A0 /* IHKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IHKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
 		6007060BCD605F968471E0C5F76DE0F0 /* Pods-firekit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-firekit-frameworks.sh"; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		61CE9E287A91C0101C629759D161E3AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69EE9521535B426CCDBE42CCA90F9D45 /* IHKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IHKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
 		6A1F26D3B817E9DCE2C7EFC1BA981602 /* Pods-firekitTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-firekitTests-resources.sh"; sourceTree = "<group>"; };
-		6D3EEA068EAD3F15AD3200C6A56050D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		757144534D3DBEDFA5DECDE65693BA9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77D64B0B451A53593DA030FEFD7222A4 /* Pods_firekit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_firekit.framework; path = "Pods-firekit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEBF6A6025B3C389DCF2E2323C765AF /* Pods-firekitTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-firekitTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7F1269B96EBD4F89695500915B00B6D7 /* IHKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IHKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
 		877B7B9954410E59EBDB57D949980CC3 /* Pods_firekitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_firekitTests.framework; path = "Pods-firekitTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		878ED9B597213B4B5F42A56E047C99C4 /* IHKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IHKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
-		896F3DE2750670585972F4928CF11D19 /* IHKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IHKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
 		89FA6D0E36877F8D68AC253B88D15108 /* Pods-firekit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-firekit-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97437ABF07DB9F27C6F7BBAB8E23D780 /* Pods-firekit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-firekit.debug.xcconfig"; sourceTree = "<group>"; };
+		A9558580D80BDEA26260401B8A8A9982 /* IHKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IHKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
+		B691B2C3B15CF194A901E25000BA4DF2 /* IHKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IHKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
 		BB193D91BD37ED689F9147D54368179C /* Pods-firekit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-firekit.modulemap"; sourceTree = "<group>"; };
-		BD278F27CF722FE097D8BC354D3B51D2 /* IHKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IHKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
 		CA5B435D3A95C1F6DB1D4454D6853E20 /* Pods-firekit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-firekit-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CBD638F842C331671F94B85460AFCF32 /* IHKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IHKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
 		CF0016BF9E2EDB1FC93FD34EEB591A6C /* Pods-firekitTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-firekitTests-dummy.m"; sourceTree = "<group>"; };
-		D2BBE962C67E10ADE4F16A2339E3C628 /* KeyboardDismissingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardDismissingView.swift; path = Sources/KeyboardDismissingView.swift; sourceTree = "<group>"; };
+		DB018692678B41BFBC9AE35529295B2A /* KeyboardDismissingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardDismissingView.swift; path = Sources/KeyboardDismissingView.swift; sourceTree = "<group>"; };
 		DCD58359ECEC54563A3B44A3DFF5A78A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFC3059330EC0DC84B1679AA236CBB73 /* Pods-firekitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-firekitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB985231B93E6CC2B73EAE2EB4DEEF5A /* Pods-firekitTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-firekitTests-frameworks.sh"; sourceTree = "<group>"; };
@@ -97,18 +97,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2FAD8F6244F4B54C7C1787128A8F2AEA /* Support Files */ = {
+		1484CC72DAE1D9FC5DF566431BDC8FCD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BD278F27CF722FE097D8BC354D3B51D2 /* IHKeyboardAvoiding.modulemap */,
-				896F3DE2750670585972F4928CF11D19 /* IHKeyboardAvoiding.xcconfig */,
-				878ED9B597213B4B5F42A56E047C99C4 /* IHKeyboardAvoiding-dummy.m */,
-				4D2AEF7221795C0B8704C1E32F456037 /* IHKeyboardAvoiding-prefix.pch */,
-				CBD638F842C331671F94B85460AFCF32 /* IHKeyboardAvoiding-umbrella.h */,
-				6D3EEA068EAD3F15AD3200C6A56050D9 /* Info.plist */,
+				74DE93BCA06A9A1D24BA448CBA7DD967 /* IHKeyboardAvoiding */,
+				F8FEB23531D81CA44615AE8BAB62A882 /* SwiftLint */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/IHKeyboardAvoiding";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -137,12 +132,15 @@
 			path = "Target Support Files/Pods-firekitTests";
 			sourceTree = "<group>";
 		};
-		4B83DE357F7C3C28A1D9B3047606E6B6 /* Pods */ = {
+		74DE93BCA06A9A1D24BA448CBA7DD967 /* IHKeyboardAvoiding */ = {
 			isa = PBXGroup;
 			children = (
-				C4DE8D53B477311734E7D76500453813 /* IHKeyboardAvoiding */,
+				540A91C688DB57262C7C945A07050AED /* KeyboardAvoiding.swift */,
+				DB018692678B41BFBC9AE35529295B2A /* KeyboardDismissingView.swift */,
+				958E85B0A33ADFAE6EFA550438D5250D /* Support Files */,
 			);
-			name = Pods;
+			name = IHKeyboardAvoiding;
+			path = IHKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -150,10 +148,24 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				4B83DE357F7C3C28A1D9B3047606E6B6 /* Pods */,
+				1484CC72DAE1D9FC5DF566431BDC8FCD /* Pods */,
 				A9FE8C4C1E92CD16D8E26F3563B6D6D3 /* Products */,
 				A24D296F54F2DDC9F3821DAA91149EE8 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		958E85B0A33ADFAE6EFA550438D5250D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F1269B96EBD4F89695500915B00B6D7 /* IHKeyboardAvoiding.modulemap */,
+				B691B2C3B15CF194A901E25000BA4DF2 /* IHKeyboardAvoiding.xcconfig */,
+				5CD59D03E6F5F60BF2453123CE0731A0 /* IHKeyboardAvoiding-dummy.m */,
+				69EE9521535B426CCDBE42CCA90F9D45 /* IHKeyboardAvoiding-prefix.pch */,
+				A9558580D80BDEA26260401B8A8A9982 /* IHKeyboardAvoiding-umbrella.h */,
+				61CE9E287A91C0101C629759D161E3AD /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IHKeyboardAvoiding";
 			sourceTree = "<group>";
 		};
 		A24D296F54F2DDC9F3821DAA91149EE8 /* Targets Support Files */ = {
@@ -193,17 +205,6 @@
 			path = "Target Support Files/Pods-firekit";
 			sourceTree = "<group>";
 		};
-		C4DE8D53B477311734E7D76500453813 /* IHKeyboardAvoiding */ = {
-			isa = PBXGroup;
-			children = (
-				1CBD0400A6AB4681E2989E8519CF2A51 /* KeyboardAvoiding.swift */,
-				D2BBE962C67E10ADE4F16A2339E3C628 /* KeyboardDismissingView.swift */,
-				2FAD8F6244F4B54C7C1787128A8F2AEA /* Support Files */,
-			);
-			name = IHKeyboardAvoiding;
-			path = IHKeyboardAvoiding;
-			sourceTree = "<group>";
-		};
 		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +212,14 @@
 				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		F8FEB23531D81CA44615AE8BAB62A882 /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,7 +373,7 @@
 /* Begin XCBuildConfiguration section */
 		2AE8E204E031182BB6FA5E4C17689205 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 896F3DE2750670585972F4928CF11D19 /* IHKeyboardAvoiding.xcconfig */;
+			baseConfigurationReference = B691B2C3B15CF194A901E25000BA4DF2 /* IHKeyboardAvoiding.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -507,7 +516,7 @@
 		};
 		74777CEB66B717E9A5FBA55D8E5064BD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 896F3DE2750670585972F4928CF11D19 /* IHKeyboardAvoiding.xcconfig */;
+			baseConfigurationReference = B691B2C3B15CF194A901E25000BA4DF2 /* IHKeyboardAvoiding.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

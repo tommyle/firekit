@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIViewController: UIGestureRecognizerDelegate {
-    
+
     /*
      * Aadd a gesture recognizer to the view controller to dismiss the keyboard when the user taps outside of the textfield
      */
@@ -19,7 +19,7 @@ extension UIViewController: UIGestureRecognizerDelegate {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
-    
+
     /*
      * Ignore taps on buttons
      */
@@ -29,9 +29,9 @@ extension UIViewController: UIGestureRecognizerDelegate {
         }
         return true
     }
-    
+
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
-    
+
 }

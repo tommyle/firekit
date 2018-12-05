@@ -12,12 +12,12 @@ class MessagesSentTableViewCell: UITableViewCell {
 
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var bubbleView: UIView!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-                
-        self.bubbleView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner];
+
+        self.bubbleView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -25,5 +25,5 @@ class MessagesSentTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

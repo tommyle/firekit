@@ -15,25 +15,25 @@ protocol PostTableViewCellDelegate: class {
 }
 
 class PostTableViewCell: UITableViewCell {
-    
+
     weak var delegate: PostTableViewCellDelegate?
 
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var userLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    
+
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var commentsButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
-    
+
     var liked = false
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        self.postImageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner];
+
+        self.postImageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -41,33 +41,33 @@ class PostTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
     private func setLikeButtonImage() {
         let likeButtonImage = liked ? UIImage.init(named: "likeFilled") : UIImage.init(named: "like")
-        
+
         self.likeButton.setImage(likeButtonImage, for: .normal)
     }
-    
+
     @IBAction func likeButtonPressed(_ sender: Any) {
         self.liked = !liked
         self.setLikeButtonImage()
-        
+
         delegate?.likeButtonPressed(sender)
     }
-    
+
     @IBAction func commentsButtonPressed(_ sender: Any) {
         delegate?.commentsButtonPressed(sender)
     }
-    
+
     @IBAction func shareButtonPressed(_ iamge: Any) {
         self.shareButtonPressed(self.postImageView.image!)
     }
 }
 
 extension PostTableViewCell: PostTableViewCellDelegate {
-    
+
     func shareButtonPressed(_ image: UIImage) {
         delegate?.shareButtonPressed(image)
     }
-    
+
 }

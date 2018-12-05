@@ -13,7 +13,7 @@ class CommentsTableViewCell: UITableViewCell {
     @IBOutlet weak var profileImageView: ProfileImageView!
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,5 +24,5 @@ class CommentsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

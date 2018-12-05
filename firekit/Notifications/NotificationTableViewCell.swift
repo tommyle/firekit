@@ -13,7 +13,7 @@ class NotificationTableViewCell: UITableViewCell {
     @IBOutlet weak var profileImageView: ProfileImageView!
     @IBOutlet weak var notificationLabel: UILabel!
     @IBOutlet weak var likedImageView: UIImageView!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,5 +24,5 @@ class NotificationTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

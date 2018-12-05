@@ -14,7 +14,7 @@ class ChartListTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var messageTimeLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,5 +25,5 @@ class ChartListTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

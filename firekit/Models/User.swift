@@ -9,19 +9,19 @@
 import UIKit
 
 class User: NSObject {
-    
+
     var userName: String!
     var firstName: String!
     var lastName: String!
     var profileImage: UIImage!
-    
+
     convenience init?(userName: String, firstName: String, lastName: String, profileImage: UIImage) {
         self.init()
-        
+
         self.userName = userName
         self.firstName = firstName
         self.lastName = lastName
         self.profileImage = profileImage
     }
-    
+
 }

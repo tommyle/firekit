@@ -19,29 +19,28 @@ class Notification: NSObject {
     var text: String!
     var date: Date!
     var likedImage: UIImage?
-    
+
     convenience init? (user: User, type: NotificationType, date: Date) {
         self.init()
-        
+
         self.user = user
         self.type = type
         self.date = date
-        
+
         self.text = initMessage()
     }
-    
+
     convenience init? (user: User, type: NotificationType, date: Date, likedImage: UIImage) {
         self.init(user: user, type: type, date: date)
         self.likedImage = likedImage
     }
-    
+
     private func initMessage() -> String! {
         let daysSince = self.date.daysSince(date: Date())
-        
+
         if (self.type == .Followed) {
             return "\(self.user.userName!) started following you. \(daysSince!)"
-        }
-        else {
+        } else {
             return  "\(self.user.userName!) liked your photo. \(daysSince!)"
         }
     }
