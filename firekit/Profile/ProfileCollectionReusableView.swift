@@ -18,14 +18,14 @@ class ProfileCollectionReusableView: UICollectionReusableView {
     @IBOutlet weak var followersLabel: UILabel!
     @IBOutlet weak var followingLabel: UILabel!
     @IBOutlet weak var profileImageContainerView: UIView!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+
         self.profileImageContainerView.layer.borderColor = UIColor.init(named: "Magnesium")?.cgColor
         self.profileImageContainerView.layer.borderWidth = 0.5
-        
+
         self.userDetailsStackView.addBorder(toSide: .Bottom, withColor: UIColor.init(named: "Magnesium")!.cgColor, andThickness: 0.5)
     }
-    
+
 }
