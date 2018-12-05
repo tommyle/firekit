@@ -22,9 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         activityFeedViewController.tabBarItem = activityTab
         
         let chatListViewController = ChatListViewController()
-        let searchTab = UITabBarItem.init(title: "Search", image: UIImage.init(named: "search"), selectedImage: UIImage.init(named: "searchFilled"))
+        let searchTab = UITabBarItem.init(title: "Messages", image: UIImage.init(named: "comment"), selectedImage: UIImage.init(named: "commentFilled"))
         chatListViewController.tabBarItem = searchTab
         
+        let notificationsViewController = NotificationsViewController()
+        let notificationsTab = UITabBarItem.init(title: "Activity", image: UIImage.init(named: "like"), selectedImage: UIImage.init(named: "likeFilled"))
+        notificationsViewController.tabBarItem = notificationsTab
+
         let profileViewController = ProfileViewController()
         let profileTab = UITabBarItem.init(title: "Profile", image: UIImage.init(named: "profile"), selectedImage: UIImage.init(named: "profileFilled"))
         profileViewController.tabBarItem = profileTab
@@ -34,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.tabBarViewController.viewControllers = [UINavigationController.init(rootViewController: activityFeedViewController),
                                                 UINavigationController.init(rootViewController: chatListViewController),
+                                                UINavigationController.init(rootViewController: notificationsViewController),
                                                 UINavigationController.init(rootViewController: profileViewController)]
             
         window?.rootViewController = tabBarViewController

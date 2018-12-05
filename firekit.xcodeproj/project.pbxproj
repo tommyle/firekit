@@ -53,6 +53,14 @@
 		72EFAB3F21B4B4ED00BC896B /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFAB3D21B4B4ED00BC896B /* CommentsTableViewCell.swift */; };
 		72EFAB4021B4B4ED00BC896B /* CommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EFAB3E21B4B4ED00BC896B /* CommentsTableViewCell.xib */; };
 		72EFAB4221B4C2CC00BC896B /* UITableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFAB4121B4C2CC00BC896B /* UITableViewHelper.swift */; };
+		72EFAB6221B5F43600BC896B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFAB6021B5F43600BC896B /* SettingsViewController.swift */; };
+		72EFAB6321B5F43600BC896B /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EFAB6121B5F43600BC896B /* SettingsViewController.xib */; };
+		72EFAB6621B5F4A700BC896B /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFAB6421B5F4A700BC896B /* NotificationsViewController.swift */; };
+		72EFAB6721B5F4A700BC896B /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EFAB6521B5F4A700BC896B /* NotificationsViewController.xib */; };
+		72EFAB6A21B5F4BD00BC896B /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFAB6821B5F4BD00BC896B /* NotificationTableViewCell.swift */; };
+		72EFAB6B21B5F4BE00BC896B /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EFAB6921B5F4BD00BC896B /* NotificationTableViewCell.xib */; };
+		72EFAB6E21B6167400BC896B /* NotificationFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFAB6C21B6167400BC896B /* NotificationFollowTableViewCell.swift */; };
+		72EFAB6F21B6167400BC896B /* NotificationFollowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EFAB6D21B6167400BC896B /* NotificationFollowTableViewCell.xib */; };
 		7755B46584CFC6B4354712A9 /* Pods_firekitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39400F114F1ECCB3ED38A973 /* Pods_firekitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +127,14 @@
 		72EFAB3D21B4B4ED00BC896B /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
 		72EFAB3E21B4B4ED00BC896B /* CommentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsTableViewCell.xib; sourceTree = "<group>"; };
 		72EFAB4121B4C2CC00BC896B /* UITableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewHelper.swift; sourceTree = "<group>"; };
+		72EFAB6021B5F43600BC896B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		72EFAB6121B5F43600BC896B /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		72EFAB6421B5F4A700BC896B /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		72EFAB6521B5F4A700BC896B /* NotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
+		72EFAB6821B5F4BD00BC896B /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		72EFAB6921B5F4BD00BC896B /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		72EFAB6C21B6167400BC896B /* NotificationFollowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationFollowTableViewCell.swift; sourceTree = "<group>"; };
+		72EFAB6D21B6167400BC896B /* NotificationFollowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationFollowTableViewCell.xib; sourceTree = "<group>"; };
 		B840459F6C2BA890E3625FAC /* Pods-firekitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firekitTests/Pods-firekitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF89B085B0251F7EB9B6E3EA /* Pods_firekit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firekit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F951D6E7A3B05035A069E89A /* Pods-firekitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firekitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-firekitTests/Pods-firekitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +197,8 @@
 				7284ACF621B1E24A00F1C11C /* Info.plist */,
 				7284ACEA21B1E24900F1C11C /* AppDelegate.swift */,
 				72968B1521B354BA003E06DD /* Main.storyboard */,
+				72EFAB5F21B5F42500BC896B /* Settings */,
+				72EFAB5E21B5F23000BC896B /* Notifications */,
 				72EFAB3821B49CA300BC896B /* Common */,
 				72968B1421B35188003E06DD /* Assets */,
 				72968B0F21B350C1003E06DD /* ActivityFeed */,
@@ -332,6 +350,28 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		72EFAB5E21B5F23000BC896B /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				72EFAB6421B5F4A700BC896B /* NotificationsViewController.swift */,
+				72EFAB6521B5F4A700BC896B /* NotificationsViewController.xib */,
+				72EFAB6821B5F4BD00BC896B /* NotificationTableViewCell.swift */,
+				72EFAB6921B5F4BD00BC896B /* NotificationTableViewCell.xib */,
+				72EFAB6C21B6167400BC896B /* NotificationFollowTableViewCell.swift */,
+				72EFAB6D21B6167400BC896B /* NotificationFollowTableViewCell.xib */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		72EFAB5F21B5F42500BC896B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				72EFAB6021B5F43600BC896B /* SettingsViewController.swift */,
+				72EFAB6121B5F43600BC896B /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		D9690EC4A95C179F67819DC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +477,7 @@
 				72968AFE21B32D5B003E06DD /* ChartListTableViewCell.xib in Resources */,
 				72968AEF21B25E75003E06DD /* MessagesReceivedTableViewCell.xib in Resources */,
 				7284AD1E21B24C9400F1C11C /* ChatViewController.xib in Resources */,
+				72EFAB6721B5F4A700BC896B /* NotificationsViewController.xib in Resources */,
 				72968AEB21B25E5D003E06DD /* MessagesSentTableViewCell.xib in Resources */,
 				72968B0E21B350B1003E06DD /* ProfileViewController.xib in Resources */,
 				72968B1621B354BA003E06DD /* Main.storyboard in Resources */,
@@ -446,9 +487,12 @@
 				7284AD0B21B1EE3F00F1C11C /* Colors.xcassets in Resources */,
 				72968B1A21B35746003E06DD /* PostTableViewCell.xib in Resources */,
 				72EFAB3C21B49CED00BC896B /* ProfileImageView.xib in Resources */,
+				72EFAB6F21B6167400BC896B /* NotificationFollowTableViewCell.xib in Resources */,
 				7284ACF221B1E24A00F1C11C /* Assets.xcassets in Resources */,
+				72EFAB6B21B5F4BE00BC896B /* NotificationTableViewCell.xib in Resources */,
 				72968B2321B3A078003E06DD /* StoriesCollectionViewCell.xib in Resources */,
 				72968AF821B32CFF003E06DD /* ChatListViewController.xib in Resources */,
+				72EFAB6321B5F43600BC896B /* SettingsViewController.xib in Resources */,
 				72EFAB4021B4B4ED00BC896B /* CommentsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,14 +604,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72EFAB6A21B5F4BD00BC896B /* NotificationTableViewCell.swift in Sources */,
 				72968AEE21B25E75003E06DD /* MessagesReceivedTableViewCell.swift in Sources */,
 				72968B0721B346D3003E06DD /* DataAccessManager.swift in Sources */,
 				72EFAB3621B49C2000BC896B /* CommentsViewController.swift in Sources */,
+				72EFAB6621B5F4A700BC896B /* NotificationsViewController.swift in Sources */,
 				72968B2221B3A078003E06DD /* StoriesCollectionViewCell.swift in Sources */,
 				72968B2521B3A797003E06DD /* UIViewHelper.swift in Sources */,
 				72EFAB2A21B44C2100BC896B /* ProfileCollectionReusableView.swift in Sources */,
 				72968B1921B35746003E06DD /* PostTableViewCell.swift in Sources */,
 				7284AD2021B24CE600F1C11C /* ComposerView.swift in Sources */,
+				72EFAB6221B5F43600BC896B /* SettingsViewController.swift in Sources */,
 				72EFAB2D21B4988C00BC896B /* UIColorHelper.swift in Sources */,
 				7284AD1921B1EE9D00F1C11C /* LoginViewController.swift in Sources */,
 				72968B1221B35157003E06DD /* ActivityFeedViewController.swift in Sources */,
@@ -578,6 +625,7 @@
 				72968AF221B2F09A003E06DD /* ViewControllerHelper.swift in Sources */,
 				72EFAB3A21B49CE100BC896B /* ProfileImageView.swift in Sources */,
 				72EFAB4221B4C2CC00BC896B /* UITableViewHelper.swift in Sources */,
+				72EFAB6E21B6167400BC896B /* NotificationFollowTableViewCell.swift in Sources */,
 				72968AEA21B25E5D003E06DD /* MessagesSentTableViewCell.swift in Sources */,
 				72EFAB3F21B4B4ED00BC896B /* CommentsTableViewCell.swift in Sources */,
 				72968B0921B34893003E06DD /* Message.swift in Sources */,
