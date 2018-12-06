@@ -36,7 +36,7 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
             return UITableViewCell()
         }
 
-        if (notification.type == .Followed) {
+        if (notification.type == .followed) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationFollowTableViewCell") as! NotificationFollowTableViewCell
 
             cell.profileImageView.image = notification.user.profileImage

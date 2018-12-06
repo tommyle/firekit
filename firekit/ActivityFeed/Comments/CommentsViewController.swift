@@ -25,9 +25,10 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
 
         KeyboardAvoiding.avoidingView = self.composerView
 
-        self.commentsTableView.register(UINib(nibName: "CommentsTableViewCell", bundle: nil), forCellReuseIdentifier: "CommentsTableViewCell")
+        self.commentsTableView.register(UINib(nibName: "CommentsTableViewCell", bundle: nil),
+                                        forCellReuseIdentifier: "CommentsTableViewCell")
 
-        self.commentsTableView.scrollToBottom(self.data as Array<Any>)
+        self.commentsTableView.scrollToBottom(self.data as [Any])
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -39,7 +40,9 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CommentsTableViewCell") as! CommentsTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CommentsTableViewCell") as? CommentsTableViewCell else {
+            return UITableViewCell()
+        }
 
         guard let user = self.data[indexPath.row] else {
             return cell
@@ -60,16 +63,9 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
 extension CommentsViewController: ComposerViewDelegate {
 
     func sendButtonPressed(_ sender: String) {
-//        DataAccessManager.shared.messages.append(Message(text: sender, type: .Sent))
-//
-//        self.commentsTableView.beginUpdates()
-//        self.commentsTableView.insertRows(at: [IndexPath(row: DataAccessManager.shared.users.count - 1, section: 0)], with: .automatic)
-//        self.commentsTableView.endUpdates()
-//
-//        self.commentsTableView.scrollToBottom(DataAccessManager.shared.users as Array<Any>)
     }
 
     func didBeginEditing(_ sender: UITextField) {
-        self.commentsTableView.scrollToBottom(self.data as Array<Any>)
+        self.commentsTableView.scrollToBottom(self.data as [Any])
     }
 }

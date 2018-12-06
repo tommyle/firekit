@@ -9,8 +9,8 @@
 import UIKit
 
 enum NotificationType {
-    case Followed
-    case Liked
+    case followed
+    case liked
 }
 
 class Notification: NSObject {
@@ -38,7 +38,7 @@ class Notification: NSObject {
     private func initMessage() -> String! {
         let daysSince = self.date.daysSince(date: Date())
 
-        if (self.type == .Followed) {
+        if (self.type == .followed) {
             return "\(self.user.userName!) started following you. \(daysSince!)"
         } else {
             return  "\(self.user.userName!) liked your photo. \(daysSince!)"

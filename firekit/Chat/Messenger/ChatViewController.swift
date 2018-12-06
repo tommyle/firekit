@@ -24,14 +24,17 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         KeyboardAvoiding.avoidingView = self.composerView
 
-        self.chatTableView.register(UINib(nibName: "MessagesSentTableViewCell", bundle: nil), forCellReuseIdentifier: "MessagesSentTableViewCell")
-        self.chatTableView.register(UINib(nibName: "MessagesReceivedTableViewCell", bundle: nil), forCellReuseIdentifier: "MessagesReceivedTableViewCell")
+        self.chatTableView.register(UINib(nibName: "MessagesSentTableViewCell", bundle: nil),
+                                    forCellReuseIdentifier: "MessagesSentTableViewCell")
+
+        self.chatTableView.register(UINib(nibName: "MessagesReceivedTableViewCell", bundle: nil),
+                                    forCellReuseIdentifier: "MessagesReceivedTableViewCell")
     }
 
     override func viewWillAppear(_ animated: Bool) {
         if (!self.viewHasBeenSet) {
             self.viewHasBeenSet = true
-            self.chatTableView.scrollToBottom(DataAccessManager.shared.messages as Array<Any>)
+            self.chatTableView.scrollToBottom(DataAccessManager.shared.messages as [Any])
         }
     }
 
@@ -44,20 +47,22 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         guard let message = DataAccessManager.shared.messages[indexPath.row] else {
             return UITableViewCell()
         }
 
-        let cellIdentifier = message.type == .Sent ? "MessagesSentTableViewCell" : "MessagesReceivedTableViewCell"
+        let cellIdentifier = message.type == .sent ? "MessagesSentTableViewCell" : "MessagesReceivedTableViewCell"
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)!
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) else {
+            return UITableViewCell()
+        }
 
-        switch cell {
-        case is MessagesSentTableViewCell:
-            (cell as! MessagesSentTableViewCell).messageLabel.text = message.text
-        default:
-            (cell as! MessagesReceivedTableViewCell).messageLabel.text = message.text
+        if let sentCell = cell as? MessagesSentTableViewCell {
+            sentCell.messageLabel.text = message.text
+        }
+
+        if let receivedCell = cell as? MessagesReceivedTableViewCell {
+            receivedCell.messageLabel.text = message.text
         }
 
         return cell
@@ -67,16 +72,17 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 extension ChatViewController: ComposerViewDelegate {
 
     func sendButtonPressed(_ sender: String) {
-        DataAccessManager.shared.messages.append(Message(text: sender, type: .Sent))
+        DataAccessManager.shared.messages.append(Message(text: sender, type: .sent))
 
         self.chatTableView.beginUpdates()
-        self.chatTableView.insertRows(at: [IndexPath(row: DataAccessManager.shared.messages.count - 1, section: 0)], with: .automatic)
+        self.chatTableView.insertRows(at: [IndexPath(row: DataAccessManager.shared.messages.count - 1, section: 0)],
+                                      with: .automatic)
         self.chatTableView.endUpdates()
 
-        self.chatTableView.scrollToBottom(DataAccessManager.shared.messages as Array<Any>)
+        self.chatTableView.scrollToBottom(DataAccessManager.shared.messages as [Any])
     }
 
     func didBeginEditing(_ sender: UITextField) {
-        self.chatTableView.scrollToBottom(DataAccessManager.shared.messages as Array<Any>)
+        self.chatTableView.scrollToBottom(DataAccessManager.shared.messages as [Any])
     }
 }

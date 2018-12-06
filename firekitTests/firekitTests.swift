@@ -9,7 +9,7 @@
 import XCTest
 @testable import firekit
 
-class firekitTests: XCTestCase {
+class FirekitTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

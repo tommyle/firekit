@@ -25,7 +25,7 @@ class ProfileCollectionReusableView: UICollectionReusableView {
         self.profileImageContainerView.layer.borderColor = UIColor.init(named: "Magnesium")?.cgColor
         self.profileImageContainerView.layer.borderWidth = 0.5
 
-        self.userDetailsStackView.addBorder(toSide: .Bottom, withColor: UIColor.init(named: "Magnesium")!.cgColor, andThickness: 0.5)
+        self.userDetailsStackView.addBorder(toSide: .bottom, withColor: UIColor.init(named: "Magnesium")!.cgColor, andThickness: 0.5)
     }
 
 }

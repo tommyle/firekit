@@ -9,8 +9,8 @@
 import UIKit
 
 enum MessageType {
-    case Sent
-    case Received
+    case sent
+    case received
 }
 
 class Message: NSObject {
