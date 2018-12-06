@@ -38,9 +38,11 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCollectionViewCell", for: indexPath) as! PostCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCollectionViewCell", for: indexPath)
 
-        cell.imageView.image = UIImage.init(named: "post\(indexPath.row % 12 + 1)")
+        if let postcell = cell as? PostCollectionViewCell {
+            postcell.imageView.image = UIImage.init(named: "post\(indexPath.row % 12 + 1)")
+        }
 
         return cell
     }

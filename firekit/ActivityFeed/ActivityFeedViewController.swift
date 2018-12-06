@@ -46,10 +46,15 @@ class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITable
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as! PostTableViewCell
 
-        cell.delegate = self
-        cell.postImageView.image = UIImage.init(named: "post\(indexPath.row + 1)")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") else {
+            return UITableViewCell()
+        }
+
+        if let postCell = cell as? PostTableViewCell {
+            postCell.delegate = self
+            postCell.postImageView.image = UIImage.init(named: "post\(indexPath.row + 1)")
+        }
 
         return cell
     }

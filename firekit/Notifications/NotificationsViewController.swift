@@ -36,23 +36,24 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
             return UITableViewCell()
         }
 
-        if (notification.type == .followed) {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationFollowTableViewCell") as! NotificationFollowTableViewCell
+        let cellIdentifier = notification.type == .followed ? "NotificationFollowTableViewCell": "NotificationTableViewCell"
 
-            cell.profileImageView.image = notification.user.profileImage
-            cell.notificationLabel.text = notification.text
-
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell") as! NotificationTableViewCell
-
-            cell.profileImageView.image = notification.user.profileImage
-            cell.notificationLabel.text = notification.text
-            cell.likedImageView.image = notification.likedImage
-
-            return cell
-
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) else {
+            return UITableViewCell()
         }
+
+        if let followedCell = cell as? NotificationFollowTableViewCell {
+            followedCell.profileImageView.image = notification.user.profileImage
+            followedCell.notificationLabel.text = notification.text
+        }
+
+        if let likedCell = cell as? NotificationTableViewCell {
+            likedCell.profileImageView.image = notification.user.profileImage
+            likedCell.notificationLabel.text = notification.text
+            likedCell.likedImageView.image = notification.likedImage
+        }
+
+        return cell
     }
 
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
