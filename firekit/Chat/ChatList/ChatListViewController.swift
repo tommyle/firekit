@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChatListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ChatListViewController: UIViewController {
 
     @IBOutlet weak var chatListTableView: UITableView!
 
@@ -36,6 +36,10 @@ class ChatListViewController: UIViewController, UITableViewDelegate, UITableView
         return searchBar
     }
 
+}
+
+extension ChatListViewController: UITableViewDataSource {
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -43,6 +47,10 @@ class ChatListViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataAccessManager.shared.users.count
     }
+
+}
+
+extension ChatListViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
@@ -71,4 +79,5 @@ class ChatListViewController: UIViewController, UITableViewDelegate, UITableView
 
         tableView.deselectRow(at: indexPath, animated: true)
     }
+
 }

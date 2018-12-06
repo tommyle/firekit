@@ -9,7 +9,7 @@
 import UIKit
 import IHKeyboardAvoiding
 
-class CommentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CommentsViewController: UIViewController {
 
     @IBOutlet weak var commentsTableView: UITableView!
     @IBOutlet weak var composerView: ComposerView!
@@ -31,6 +31,10 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
         self.commentsTableView.scrollToBottom(self.data as [Any])
     }
 
+}
+
+extension CommentsViewController: UITableViewDataSource {
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -38,6 +42,10 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.data.count
     }
+
+}
+
+extension CommentsViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CommentsTableViewCell") as? CommentsTableViewCell else {

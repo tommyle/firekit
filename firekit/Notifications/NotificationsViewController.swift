@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NotificationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class NotificationsViewController: UIViewController {
 
     @IBOutlet weak var notificationsTableView: UITableView!
     var data = DataAccessManager.shared.notifications
@@ -22,6 +22,10 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
         self.notificationsTableView.register(UINib(nibName: "NotificationFollowTableViewCell", bundle: nil), forCellReuseIdentifier: "NotificationFollowTableViewCell")
     }
 
+}
+
+extension NotificationsViewController: UITableViewDataSource {
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -29,6 +33,10 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.data.count * 3
     }
+
+}
+
+extension NotificationsViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
@@ -59,4 +67,5 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+
 }

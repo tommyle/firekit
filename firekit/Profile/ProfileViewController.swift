@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class ProfileViewController: UIViewController {
 
     @IBOutlet weak var postsCollectionView: UICollectionView!
 
@@ -33,9 +33,20 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         self.postsCollectionView.collectionViewLayout = layout
     }
 
+    @objc func logoutButtonTapped() {
+        UIApplication.shared.windows[0].rootViewController = LoginViewController()
+    }
+}
+
+extension ProfileViewController: UICollectionViewDataSource {
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 50
     }
+
+}
+
+extension ProfileViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCollectionViewCell", for: indexPath)
@@ -46,6 +57,10 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
 
         return cell
     }
+
+}
+
+extension ProfileViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
 
@@ -59,7 +74,4 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         return headerView
     }
 
-    @objc func logoutButtonTapped() {
-        UIApplication.shared.windows[0].rootViewController = LoginViewController()
-    }
 }

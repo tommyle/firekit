@@ -9,7 +9,7 @@
 import UIKit
 import IHKeyboardAvoiding
 
-class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ChatViewController: UIViewController {
 
     @IBOutlet weak var chatTableView: UITableView!
     @IBOutlet weak var composerView: ComposerView!
@@ -38,6 +38,10 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
 
+}
+
+extension ChatViewController: UITableViewDataSource {
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -45,6 +49,10 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataAccessManager.shared.messages.count
     }
+
+}
+
+extension ChatViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let message = DataAccessManager.shared.messages[indexPath.row] else {
@@ -67,6 +75,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         return cell
     }
+
 }
 
 extension ChatViewController: ComposerViewDelegate {

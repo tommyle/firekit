@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource, PostTableViewCellDelegate {
+class ActivityFeedViewController: UIViewController {
 
     @IBOutlet weak var feedTableView: UITableView!
     var storiesCollectionView: UICollectionView!
@@ -37,6 +37,10 @@ class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITable
         self.feedTableView.tableHeaderView = storiesCollectionView
     }
 
+}
+
+extension ActivityFeedViewController: UITableViewDataSource {
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -44,6 +48,10 @@ class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
+
+}
+
+extension ActivityFeedViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
@@ -67,9 +75,17 @@ class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITable
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
+}
+
+extension ActivityFeedViewController: UICollectionViewDataSource {
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
+
+}
+
+extension ActivityFeedViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
@@ -81,6 +97,10 @@ class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITable
 
         return cell
     }
+
+}
+
+extension ActivityFeedViewController: PostTableViewCellDelegate {
 
     func commentsButtonPressed(_ sender: Any) {
         let commentsViewController = CommentsViewController()
@@ -98,4 +118,5 @@ class ActivityFeedViewController: UIViewController, UITableViewDelegate, UITable
 
         self.present(activityViewController, animated: true, completion: nil)
     }
+
 }
