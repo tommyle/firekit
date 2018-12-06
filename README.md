@@ -2,12 +2,23 @@
 
 # FireKit
 
-FireKit is a Swift framework that contains a set of commonly used UI components and screens. You can use this framework to kickstart your next project!
+FireKit is a Swift framework that contains a set of commonly used UI components and screens. Use it to kickstart your next project!
 
-100% native. Give it a try!
+## Build Instructions
 
-## Documentation
-TBD
+Clone the project:
+```
+git clone git@github.com:tommyle/firekit.git
+```
+Navigate to the project directory and install the pods:
+```
+cd firekit
+pod install
+```
+
+## Coding Standards
+
+This project uses SwiftLint to enforce code convention. SwiftLint automatically executes when building the project.
 
 ## Demo applications
 
@@ -20,8 +31,3 @@ TBD
 License
 -------------
 TBD
-
-### From Tommy
-
-Enjoy!
-I'm happy to receive your feedback.
