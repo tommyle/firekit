@@ -32,10 +32,14 @@ class ChatViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        if (!self.viewHasBeenSet) {
-            self.viewHasBeenSet = true
-            self.chatTableView.scrollToBottom(DataAccessManager.shared.messages as [Any])
+        super.viewWillAppear(animated)
+
+        guard !self.viewHasBeenSet else {
+            return
         }
+
+        self.viewHasBeenSet = true
+        self.chatTableView.scrollToBottom(DataAccessManager.shared.messages as [Any])
     }
 
 }
