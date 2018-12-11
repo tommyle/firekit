@@ -14,6 +14,7 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var chatTableView: UITableView!
     @IBOutlet weak var composerView: ComposerView!
     var viewHasBeenSet = false
+    @IBOutlet weak var composerHeightConstraint: NSLayoutConstraint!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,5 +98,10 @@ extension ChatViewController: ComposerViewDelegate {
 
     func didBeginEditing(_ sender: UITextField) {
         self.chatTableView.scrollToBottom(DataAccessManager.shared.messages as [Any])
+        self.composerHeightConstraint.constant = 52.0
+    }
+
+    func didEndEditing(_ sender: UITextField) {
+        self.composerHeightConstraint.constant = 86.0
     }
 }

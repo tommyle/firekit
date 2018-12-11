@@ -11,6 +11,7 @@ import UIKit
 protocol ComposerViewDelegate: class {
     func sendButtonPressed(_ sender: String)
     func didBeginEditing(_ sender: UITextField)
+    func didEndEditing(_ sender: UITextField)
 }
 
 @IBDesignable
@@ -66,6 +67,10 @@ class ComposerView: UIView, UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.didBeginEditing(textField)
     }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.didEndEditing(textField)
+    }
 }
 
 extension ComposerView: ComposerViewDelegate {
@@ -76,6 +81,10 @@ extension ComposerView: ComposerViewDelegate {
 
     func didBeginEditing(_ sender: UITextField) {
         delegate?.didBeginEditing(sender)
+    }
+
+    func didEndEditing(_ sender: UITextField) {
+        delegate?.didEndEditing(sender)
     }
 
 }

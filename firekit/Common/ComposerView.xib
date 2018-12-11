@@ -67,8 +67,8 @@
             </subviews>
             <color key="backgroundColor" name="Concrete"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qxv-B8-WZm" secondAttribute="bottom" constant="8" id="5OX-cR-una"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cdq-8M-2Sw" secondAttribute="bottom" constant="8" id="EoR-06-ML1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qxv-B8-WZm" secondAttribute="bottom" constant="8" id="5OX-cR-una"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cdq-8M-2Sw" secondAttribute="bottom" constant="8" id="EoR-06-ML1"/>
                 <constraint firstItem="qxv-B8-WZm" firstAttribute="leading" secondItem="cdq-8M-2Sw" secondAttribute="trailing" constant="12" id="Ngd-dP-E2g"/>
                 <constraint firstItem="wu8-kU-Lfy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="VJL-ET-PHD"/>
                 <constraint firstItem="wu8-kU-Lfy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="YCM-Tc-b5I"/>
@@ -76,7 +76,7 @@
                 <constraint firstItem="cdq-8M-2Sw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="ju7-Cc-7In"/>
                 <constraint firstItem="cdq-8M-2Sw" firstAttribute="leading" secondItem="wu8-kU-Lfy" secondAttribute="trailing" constant="12" id="odj-JE-wzF"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qxv-B8-WZm" secondAttribute="trailing" constant="8" id="rCI-5K-ZnI"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wu8-kU-Lfy" secondAttribute="bottom" constant="8" id="wDx-9A-VD2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wu8-kU-Lfy" secondAttribute="bottom" constant="8" id="wDx-9A-VD2"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

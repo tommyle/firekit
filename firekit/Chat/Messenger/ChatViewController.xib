@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,6 +14,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController" customModule="firekit" customModuleProvider="target">
             <connections>
                 <outlet property="chatTableView" destination="P7c-V6-4Xk" id="7Hj-KG-AnF"/>
+                <outlet property="composerHeightConstraint" destination="jT4-jC-A1w" id="VGj-Al-LqB"/>
                 <outlet property="composerView" destination="tmS-wM-kd3" id="kpy-ft-Iqv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -26,27 +28,24 @@
                     <rect key="frame" x="0.0" y="726" width="375" height="86"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="86" id="W03-0Y-A6g"/>
+                        <constraint firstAttribute="height" constant="86" id="jT4-jC-A1w"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P7c-V6-4Xk">
                     <rect key="frame" x="0.0" y="44" width="375" height="682"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="682" id="o3T-Uh-NIS"/>
-                    </constraints>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Y9l-r4-n1g"/>
                         <outlet property="delegate" destination="-1" id="Uay-4b-GrB"/>
                     </connections>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" name="Concrete"/>
             <constraints>
-                <constraint firstItem="tmS-wM-kd3" firstAttribute="top" secondItem="P7c-V6-4Xk" secondAttribute="bottom" id="0SO-46-yX5"/>
                 <constraint firstItem="P7c-V6-4Xk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="3Wm-iQ-n5Z"/>
                 <constraint firstItem="P7c-V6-4Xk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Khh-6Z-sIL"/>
-                <constraint firstAttribute="bottom" secondItem="tmS-wM-kd3" secondAttribute="bottom" id="aVN-Pr-fI9"/>
+                <constraint firstAttribute="bottom" secondItem="tmS-wM-kd3" secondAttribute="bottom" id="jI4-1r-13Y"/>
+                <constraint firstItem="tmS-wM-kd3" firstAttribute="top" secondItem="P7c-V6-4Xk" secondAttribute="bottom" id="jTB-C9-zkp"/>
                 <constraint firstAttribute="trailing" secondItem="P7c-V6-4Xk" secondAttribute="trailing" id="lUm-E9-vAt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tmS-wM-kd3" secondAttribute="trailing" id="ox8-yR-dN4"/>
                 <constraint firstItem="tmS-wM-kd3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="r63-pg-XQc"/>
@@ -55,4 +54,9 @@
             <point key="canvasLocation" x="132" y="153.69458128078819"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="Concrete">
+            <color red="0.94509803921568625" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

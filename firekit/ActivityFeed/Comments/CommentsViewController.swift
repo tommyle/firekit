@@ -13,6 +13,7 @@ class CommentsViewController: UIViewController {
 
     @IBOutlet weak var commentsTableView: UITableView!
     @IBOutlet weak var composerView: ComposerView!
+    @IBOutlet weak var composerHeightConstraint: NSLayoutConstraint!
 
     let data = DataAccessManager.shared.users
 
@@ -75,5 +76,10 @@ extension CommentsViewController: ComposerViewDelegate {
 
     func didBeginEditing(_ sender: UITextField) {
         self.commentsTableView.scrollToBottom(self.data as [Any])
+        self.composerHeightConstraint.constant = 52.0
+    }
+
+    func didEndEditing(_ sender: UITextField) {
+        self.composerHeightConstraint.constant = 86.0
     }
 }

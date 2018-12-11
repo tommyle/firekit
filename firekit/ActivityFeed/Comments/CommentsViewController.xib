@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentsViewController" customModule="firekit" customModuleProvider="target">
             <connections>
                 <outlet property="commentsTableView" destination="XBf-pi-Rad" id="y5s-Rz-WfN"/>
+                <outlet property="composerHeightConstraint" destination="cqJ-lu-KIk" id="dWC-DZ-OAc"/>
                 <outlet property="composerView" destination="nc5-5N-Iaf" id="jUB-EU-sTE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -33,6 +34,9 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nc5-5N-Iaf" customClass="ComposerView" customModule="firekit" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="726" width="375" height="86"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="cqJ-lu-KIk"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
