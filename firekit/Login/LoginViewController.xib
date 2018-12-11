@@ -24,12 +24,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundLoginV1DarkTheme" translatesAutoresizingMaskIntoConstraints="NO" id="N5U-GJ-uNC">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="N5U-GJ-uNC" secondAttribute="height" multiplier="375:280" id="XDJ-bT-nFU"/>
-                    </constraints>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwS-4U-M8c">
                     <rect key="frame" x="30" y="644" width="315" height="56"/>
                     <color key="backgroundColor" name="MajorelleBlue"/>
@@ -146,23 +140,29 @@
                         <constraint firstAttribute="width" constant="260" id="LiL-KF-PA9"/>
                     </constraints>
                 </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="N5U-GJ-uNC">
+                    <rect key="frame" x="105.66666666666669" y="134" width="164" height="164"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="N5U-GJ-uNC" secondAttribute="height" multiplier="1:1" id="Ko3-2y-ZBa"/>
+                        <constraint firstAttribute="width" constant="164" id="sGS-Fm-F1M"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" name="DeepCove"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N5U-GJ-uNC" secondAttribute="trailing" id="1CL-Vz-A9N"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="r61-d5-dpI" secondAttribute="bottom" constant="20" id="6OZ-Y1-vQ2"/>
                 <constraint firstItem="bYj-Dh-DFp" firstAttribute="top" secondItem="deT-vu-vLn" secondAttribute="bottom" constant="24" id="9mZ-1k-tZf"/>
-                <constraint firstItem="N5U-GJ-uNC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FPk-ql-dLh"/>
                 <constraint firstItem="nwS-4U-M8c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Hzv-49-he9"/>
                 <constraint firstItem="deT-vu-vLn" firstAttribute="width" secondItem="nwS-4U-M8c" secondAttribute="width" id="QSp-Oc-Zo2"/>
-                <constraint firstItem="N5U-GJ-uNC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Shs-Ia-aQv"/>
                 <constraint firstItem="r61-d5-dpI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="X0g-kQ-wYo"/>
                 <constraint firstItem="r61-d5-dpI" firstAttribute="top" secondItem="nwS-4U-M8c" secondAttribute="bottom" constant="28" id="Xha-Yh-Ihq"/>
                 <constraint firstItem="nwS-4U-M8c" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Xu4-H7-fB2"/>
+                <constraint firstItem="Mjz-c9-Ntz" firstAttribute="top" secondItem="N5U-GJ-uNC" secondAttribute="bottom" constant="100" id="Z1X-Cd-lvO"/>
                 <constraint firstItem="deT-vu-vLn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZGF-Xs-cmE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nwS-4U-M8c" secondAttribute="trailing" constant="30" id="cLv-aM-1cP"/>
                 <constraint firstItem="deT-vu-vLn" firstAttribute="top" secondItem="Mjz-c9-Ntz" secondAttribute="bottom" constant="30" id="dz9-a0-N9N"/>
                 <constraint firstItem="Mjz-c9-Ntz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jGF-1J-R4I"/>
+                <constraint firstItem="N5U-GJ-uNC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lF0-cR-d89"/>
                 <constraint firstItem="bYj-Dh-DFp" firstAttribute="width" secondItem="nwS-4U-M8c" secondAttribute="width" id="mEv-Ap-I8W"/>
                 <constraint firstItem="nwS-4U-M8c" firstAttribute="top" secondItem="bYj-Dh-DFp" secondAttribute="bottom" constant="24" id="oyY-2s-ZFX"/>
                 <constraint firstItem="bYj-Dh-DFp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ufW-jF-ao5"/>
@@ -172,9 +172,9 @@
         </view>
     </objects>
     <resources>
-        <image name="backgroundLoginV1DarkTheme" width="375" height="280"/>
         <image name="facebook" width="56" height="56"/>
         <image name="google" width="56" height="56"/>
+        <image name="login" width="164" height="164"/>
         <image name="twitter" width="56" height="56"/>
         <namedColor name="Bunting">
             <color red="0.062745098039215685" green="0.10196078431372549" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
