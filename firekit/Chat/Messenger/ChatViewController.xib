@@ -25,10 +25,16 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmS-wM-kd3" customClass="ComposerView" customModule="firekit" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="726" width="375" height="86"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="W03-0Y-A6g"/>
+                    </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P7c-V6-4Xk">
                     <rect key="frame" x="0.0" y="44" width="375" height="682"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="682" id="o3T-Uh-NIS"/>
+                    </constraints>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Y9l-r4-n1g"/>
                         <outlet property="delegate" destination="-1" id="Uay-4b-GrB"/>
