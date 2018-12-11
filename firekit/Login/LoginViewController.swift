@@ -14,16 +14,33 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-
+    @IBOutlet weak var registerButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        KeyboardAvoiding.avoidingView = loginButton
+        self.setBackgroundImage()
+
+        self.emailTextField.addBorder(toSide: .bottom, withColor: UIColor.white.cgColor, andThickness: 1.0)
+        self.passwordTextField.addBorder(toSide: .bottom, withColor: UIColor.white.cgColor, andThickness: 1.0)
+
+        KeyboardAvoiding.avoidingView = self.registerButton
 
         self.addDismissKeyboardGesture()
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+
+    func setBackgroundImage() {
+        var imageView: UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = UIImage(named: "loginBackground")
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
     }
 
     @IBAction func loginButtonTapped(_ sender: Any) {
