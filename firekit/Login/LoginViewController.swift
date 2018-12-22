@@ -18,7 +18,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setBackgroundImage()
 
         self.emailTextField.addBorder(toSide: .bottom, withColor: UIColor.white.cgColor, andThickness: 1.0)
         self.passwordTextField.addBorder(toSide: .bottom, withColor: UIColor.white.cgColor, andThickness: 1.0)
@@ -26,6 +25,11 @@ class LoginViewController: UIViewController {
         KeyboardAvoiding.avoidingView = self.registerButton
 
         self.addDismissKeyboardGesture()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setBackgroundImage()
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
