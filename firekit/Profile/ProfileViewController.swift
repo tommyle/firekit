@@ -12,7 +12,11 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet weak var postsCollectionView: UICollectionView!
 
+    // Number of items per row
     let itemsPerRow: CGFloat = 3
+
+    // Spacing between cells
+    let inset: CGFloat = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +32,8 @@ class ProfileViewController: UIViewController {
 
         let screenSize = UIScreen.main.bounds
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
-        layout.itemSize = CGSize(width: screenSize.width / itemsPerRow - 1, height: screenSize.width / itemsPerRow - 1)
+        layout.sectionInset = UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
+        layout.itemSize = CGSize(width: screenSize.width / itemsPerRow - inset, height: screenSize.width / itemsPerRow - inset)
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         self.postsCollectionView.collectionViewLayout = layout
