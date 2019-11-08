@@ -22,7 +22,7 @@ class ActivityFeedViewController: UIViewController {
         layout.sectionInset = UIEdgeInsets(top: 8, left: 10, bottom: 4, right: 10)
         layout.itemSize = CGSize(width: 66, height: 86)
         layout.scrollDirection = .horizontal
-        let frame = CGRect(x: 0, y: 0, width: 2000, height: 98)
+        let frame = CGRect(x: 0, y: 0, width: 0, height: 98)
 
         self.storiesCollectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
         self.storiesCollectionView.backgroundColor = UIColor.clear
